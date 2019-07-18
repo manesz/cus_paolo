@@ -1,0 +1,119 @@
+/* DBOzoneX */
+/* ---------------------------------------------------------------- 
+  .eot                                  : IE9 Compat Modes
+  .eot#iefix format embedded-opentype   : IE6-IE8
+  .woff2                                : Super Modern Browsers
+  .woff                                 : Pretty Modern Browsers
+  .ttf                                  : Safari, Android, iOS
+  .svg#svgFontName                      : Legacy iOS
+
+  100 								: thin
+  200									: extra-light
+  300									: light
+  400									: regular
+  500									: medium
+  600									: semi-bold
+  700									: bold
+  800									: extra-bold
+  900									: black
+
+------------------------------------------------------------------- */
+@font-face {
+  font-family: 'DBHeavent'; 
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/DBHeavent/DBHeavent-Thin.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-Thin.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-Thin.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-Thin.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/DBHeavent/DBHeavent-ThinIt.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-ThinIt.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-ThinIt.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-ThinIt.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/DBHeavent/DBHeavent-Light.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-Light.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-Light.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-Light.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/DBHeavent/DBHeavent-LightIt.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-LightIt.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-LightIt.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-LightIt.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DBHeavent/DBHeavent.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/DBHeavent/DBHeavent-Med.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-Med.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-Med.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-Med.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/DBHeavent/DBHeavent-MedIt.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-MedIt.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-MedIt.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-MedIt.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/DBHeavent/DBHeavent-Bold.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-Bold.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-Bold.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-Bold.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/DBHeavent/DBHeavent-BoldIt.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-BoldIt.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-BoldIt.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-BoldIt.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/DBHeavent/DBHeavent-Black.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-Black.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-Black.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-Black.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'DBHeavent';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/DBHeavent/DBHeavent-BlackIt.woff") format("woff")
+      , url('../fonts/DBHeavent/DBHeavent-BlackIt.ttf') format('truetype')
+      , url('../fonts/DBHeavent/DBHeavent-BlackIt.svg') format('svg')
+      , url('../fonts/DBHeavent/DBHeavent-BlackIt.eot') format('embedded-opentype');
+}
