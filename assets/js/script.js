@@ -10,9 +10,14 @@ $(document).ready(function(){
   });
 
 	scrollToFixed();
-  $(window).scroll(function(){
-  	scrollToFixed();
-  });
+	$(window).scroll(function(){
+		var scroll 				= $(window).scrollTop()
+		var headerHeight 		= $('.navigator.sticky.topfix').height();
+		var heroBannerHeight 	= $('section.hero-banner').height();
+
+		scrollToFixed();
+		hotMenu( scroll, headerHeight, heroBannerHeight );
+	});
 
 	// SLICK
 	$('.carousel').slick({
@@ -119,19 +124,72 @@ function socialLinkPopup(e, intWidth, intHeight, blnResize, action) {
         objWindow = window.open(action.attr('href'), strTitle, strParam).focus();
 }
 
+function ulBranchList() {
+	
+	var domUlBranchList = $('ul.branch-list');
+	var domUlBranchListParent = domUlBranchList.parents('li');
+
+	
+	domUlBranchList.css( 'top', domUlBranchList.parents('ul.hotmenu').height()+'px' );
+
+	console.log(domUlBranchListParent.attr('class'));
+	
+	domUlBranchListParent.on({
+		mouseenter: function(){
+			domUlBranchList.slideDown();
+		},
+		mouseleave: function(){
+			domUlBranchList.slideUp();
+		}
+
+	});
+	
+}
+
+function hotMenu( scroll, headerHeight, heroBannerHeight ) {
+
+	// SETUP ul.branch-list.height()
+	ulBranchList();
+
+	// console.log(headerHeight+' | '+heroBannerHeight);
+	// console.log('top: '+scroll);
+
+	var domHotmenu = $('ul.hotmenu');
+	var domHotmenuParent = domHotmenu.parents('.hotmenu.--home');
+
+	if( scroll > (headerHeight+heroBannerHeight-5)){
+		
+		// console.log('ready to fixed');
+		// console.log('scroll: '+scroll+' total: '+(headerHeight+heroBannerHeight+25));
+		// console.log('domHotmenu height: '+domHotmenu.height());
+		// console.log( domHotmenuParent.attr('class') );
+		// console.log( 'domHotmenu.height: '+domHotmenu.height());
+		
+		
+		
+
+		domHotmenu.addClass('--fixed');
+		domHotmenu.css('top', headerHeight+'px');
+		domHotmenuParent.css('height', (domHotmenu.height()+64)+'px');
+	} else {
+		domHotmenu.removeClass('--fixed');
+		domHotmenu.css('top', '0');
+	}
+}
+
 function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 
 	// SETUP PARAMETER
 	var scroll 							= $(window).scrollTop(),
 			domSticky 					= $('.navigator.sticky'),
-			domHotmenu					= $('.hotmenu'),
+			// domHotmenu					= $('.hotmenu'),
 			domCarousel 				= $('.hero-carousel'),
 			domTopbar 					= $('.topbar'),
 			domNavbar           = $('.navbar.navbar-paolo'),
 			domSiteLogo 				= $('.navigator.sticky nav.navbar a.navbar-brand img'),
 
 			stickyHeight 				= domSticky.height(),
-			hotmenuHeight 			= domHotmenu.height(),
+			// hotmenuHeight 			= domHotmenu.height(),
 			carouselHeight 			= domCarousel.height(),
 			topbarHeight 				= domTopbar.height()+21,
 			navbarHeight 				= domNavbar.height(),
@@ -158,12 +216,12 @@ function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 
 		if( scroll >= sumHeightTopbarCarousel ) {
 			domCarousel.css('margin-bottom', '82px');
-			domHotmenu.css('position', 'fixed').css('width', '100%').css('top', topbarHeight+'px').css('z-index', '1');
+			// 20190719 : domHotmenu.css('position', 'fixed').css('width', '100%').css('top', topbarHeight+'px').css('z-index', '1');
 
 		}
 		else {
 			domCarousel.css('margin-bottom', '0');
-			domHotmenu.css('position', 'relative').css('top', '0')
+			// 20190719 : domHotmenu.css('position', 'relative').css('top', '0')
 		} // if:scroll >= sumHeightTopbarCarousel
 
   } // if:scroll < 1
@@ -179,18 +237,18 @@ function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 		domSiteLogo.css('width', '100px');
 		domSticky.css('height', '96px').css('top', '0');
 		domNavbar.css('top', '0').css('height', '96px');
-		domHotmenu.css('top', '0');
+		// 20190719 : domHotmenu.css('top', '0');
   }
 	else if ( scWidth <= 768 && scroll >= 1 ) { //console.log('case 4');
 
 		domSiteLogo.css('width', '100px').css('max-width', '100px').css('bottom', '0');
 		domSticky.css('top', '0');
 		domNavbar.css('top', '0').css('height', '96px');
-		domHotmenu.css('top', '0').css('z-index', '200');
+		// 20190719 : domHotmenu.css('top', '0').css('z-index', '200');
 
 		if( scroll >= domCarousel.height() ) {
 			domCarousel.css('margin-bottom', '80px');
-			domHotmenu.css('position', 'fixed').css('top', '96px').css('width', '100%');
+			// 20190719 : domHotmenu.css('position', 'fixed').css('top', '96px').css('width', '100%');
 		}
 		else {
 			domCarousel.css('margin-bottom', '0');

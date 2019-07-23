@@ -25,11 +25,28 @@ section {
       margin-bottom: .5rem; }
 
 section.hero-banner {
+  padding-top: 0;
   padding-bottom: 0; }
 
 section.hotmenu {
-  padding: 2rem;
-  background-color: #14b1e7; }
+  display: block;
+  position: relative;
+  z-index: 20; }
+  section.hotmenu.--home {
+    display: block;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    background-color: red; }
+    section.hotmenu.--home ul.hotmenu {
+      background-color: #14b1e7; }
+      section.hotmenu.--home ul.hotmenu.--fixed {
+        position: fixed;
+        z-index: 20; }
+      section.hotmenu.--home ul.hotmenu ul.branch-list {
+        display: none; }
 
 section.promotion .promotion-content a.btn.--viewmore {
   margin: auto;
@@ -76,11 +93,17 @@ ul.hotmenu {
   width: 100%;
   margin: 0; }
   ul.hotmenu li {
+    position: relative;
     width: 25%;
+    padding: 2rem;
     flex-direction: column; }
+    ul.hotmenu li:hover {
+      background-color: #047cc1;
+      transition: all .3s; }
     ul.hotmenu li a {
       display: block;
       width: fit-content;
+      margin: auto;
       font-size: 1.5rem; }
       ul.hotmenu li a img {
         max-width: 30px;
@@ -100,6 +123,22 @@ ul.nav.nav-tabs li.nav-item a.nav-link {
   ul.nav.nav-tabs li.nav-item a.nav-link.active {
     border-bottom: 2px solid #14b1e7;
     color: #14b1e7; }
+
+ul.branch-list {
+  position: absolute;
+  width: 100%;
+  left: 0; }
+  ul.branch-list li {
+    width: 100%;
+    padding: .5rem;
+    background-color: #047cc1;
+    transition: all .3s; }
+    ul.branch-list li:hover {
+      background-color: #14b1e7; }
+    ul.branch-list li a {
+      font-size: 1rem;
+      color: white;
+      text-align: left; }
 
 .card {
   border: 0; }
@@ -243,7 +282,7 @@ ul.nav.nav-tabs li.nav-item a.nav-link {
       left: 0;
       background-image: url("https://www.paolophahol.com/Resource/Image/Banner/Cover_banner_Senior.jpg");
       background-position: top center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat; }
       .hero-slider .item .banner .text {
         position: absolute;
