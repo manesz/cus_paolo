@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var scroll 				= $(window).scrollTop()
 		var headerHeight 		= $('.navigator.sticky.topfix').height();
-		var heroBannerHeight 	= $('section.hero-banner').height();
+		var heroBannerHeight 	= $('section.feature-banner').height();
 
 		scrollToFixed();
 		hotMenu( scroll, headerHeight, heroBannerHeight );
@@ -42,17 +42,21 @@ $(document).ready(function(){
 				  slidesToShow: 1,
 				  slidesToScroll: 1,
 				  infinite: true,
-				  dots: true
+				  dots: true,
+				  arrows: false
 				}
 			}
 		]
 		
 	});
-	$('.hero-slider').slick({
+	$('.carousel-hero-banner').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
+	  infinite: true,
+	  dots: true,
+	  arrows: false
 	});
 
 });
@@ -132,7 +136,7 @@ function ulBranchList() {
 	
 	domUlBranchList.css( 'top', domUlBranchList.parents('ul.hotmenu').height()+'px' );
 
-	console.log(domUlBranchListParent.attr('class'));
+	// console.log(domUlBranchListParent.attr('class'));
 	
 	domUlBranchListParent.on({
 		mouseenter: function(){
@@ -180,23 +184,26 @@ function hotMenu( scroll, headerHeight, heroBannerHeight ) {
 function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 
 	// SETUP PARAMETER
-	var scroll 							= $(window).scrollTop(),
-			domSticky 					= $('.navigator.sticky'),
-			// domHotmenu					= $('.hotmenu'),
-			domCarousel 				= $('.hero-carousel'),
-			domTopbar 					= $('.topbar'),
-			domNavbar           = $('.navbar.navbar-paolo'),
-			domSiteLogo 				= $('.navigator.sticky nav.navbar a.navbar-brand img'),
+	var scroll 						= $(window).scrollTop(),
+		domSticky 					= $('.navigator.sticky'),
+		// domHotmenu					= $('.hotmenu'),
+		domCarousel 				= $('.carousel-hero-banner'),
+		domTopbar 					= $('.topbar'),
+		domNavbar           		= $('.navbar.navbar-paolo'),
+		domSiteLogo 				= $('.navigator.sticky nav.navbar a.navbar-brand img'),
 
-			stickyHeight 				= domSticky.height(),
-			// hotmenuHeight 			= domHotmenu.height(),
-			carouselHeight 			= domCarousel.height(),
-			topbarHeight 				= domTopbar.height()+21,
-			navbarHeight 				= domNavbar.height(),
-			sumHeightTopbarCarousel = stickyHeight+carouselHeight,
+		stickyHeight 				= domSticky.height(),
+		// hotmenuHeight 			= domHotmenu.height(),
+		carouselHeight 				= domCarousel.height(),
+		topbarHeight 				= domTopbar.height()+21,
+		navbarHeight 				= domNavbar.height(),
+		sumHeightTopbarCarousel 	= stickyHeight+carouselHeight,
 
-			scWidth 						= screen.width,
-			scHeight 						= screen.height;
+		scWidth 					= screen.width,
+		scHeight 					= screen.height;
+
+			console.log('carouselHeight: '+carouselHeight);
+			
 
 	// RESPONSIVE PAGE
 	// ---------------------------------------------------------------------------

@@ -40,7 +40,7 @@ section {
   }
 }
 
-section.hero-banner {
+section.feature-banner {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -57,7 +57,6 @@ section.hotmenu {
     top: 0;
     padding-top: 0;
     margin-bottom: 0;
-    background-color: red;
 
     
 
@@ -170,7 +169,7 @@ ul.hotmenu {
   li {
     position: relative;
     width: 25%;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     flex-direction: column;
 
     &:hover {
@@ -358,12 +357,22 @@ ul.branch-list {
     }
   }
   &.--doctor {
+
+    &:hover {
+      .thumbnail {
+        img {
+          border-color: #14b1e7;
+        }
+      }
+    }
     .thumbnail {
       width: fit-content;
       margin: auto;
 
       img {
         max-width: 150px;
+        border: 3px solid transparent;
+        transition: all .5s;
       }
     }
     h5 {
@@ -386,7 +395,7 @@ ul.branch-list {
     }
     p {
       font-size: 1rem;
-      font-weight: 200;
+      font-weight: 400;
       color: #999;
       text-align: center;
     }
@@ -424,17 +433,26 @@ ul.branch-list {
 }
 
 // CAROUSEL --------------------------------------------
-.hero-slider {
+.carousel-hero-banner {
   background-color: #f5f5f5;
 
     .item {
       display: block;
       position: relative;
-      width: 100% !important;
-      height: 0;
+      // width: 100% !important;
+      // height: 0;
       padding: 0;
-      padding-top: 31%;
+      // padding-top: 31% !important;
 
+      a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0; 
+        padding-top: 36%;   
+      }
 
       .banner {
         display: block;
@@ -443,7 +461,7 @@ ul.branch-list {
         height: 100%;
         top: 0;
         left: 0;
-        background-image: url('https://www.paolophahol.com/Resource/Image/Banner/Cover_banner_Senior.jpg');
+        background-color: #047cc1;
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -473,6 +491,39 @@ ul.branch-list {
   .item {
     padding: .5rem;
   }
+}
+
+.slick-dots {
+  bottom: 10px;
+
+  li {
+    button {
+      &:before {
+        font-size: 12px;
+        color: white;
+      }
+    }
+  }
+}
+.slick-dotted {
+  bottom: 0;
+
+  &.slick-slider {
+    margin-bottom: 0;
+  }
+}
+.slick-prev:before, .slick-next:before {
+  color: #047cc1;
+}
+.slick-prev:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f053";
+  font-weight: 900;
+}
+.slick-next:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f054";
+  font-weight: 900;
 }
 
 
@@ -507,6 +558,14 @@ ul.branch-list {
           width: 100%;
         }
       }
+    }
+  }
+
+  ul.hotmenu {
+    flex-direction: column;
+
+    li {
+      width: 100%;
     }
   }
 }
