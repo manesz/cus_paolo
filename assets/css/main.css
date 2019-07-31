@@ -52,14 +52,14 @@ section.promotion .promotion-content a.btn.--viewmore {
   margin-top: 2rem; }
 
 section.doctor .tab-branch ul.nav li {
-  width: 16.5%; }
+  width: 16.65%; }
   section.doctor .tab-branch ul.nav li a {
     text-align: center; }
 section.doctor .tab-branch-content {
   padding: 3rem; }
 
 section.clinic .tab-branch ul.nav li {
-  width: 16.5%; }
+  width: 16.65%; }
   section.clinic .tab-branch ul.nav li a {
     text-align: center; }
 section.clinic .tab-branch-content {
@@ -86,6 +86,8 @@ section.consult .consult-form form {
 
 .bottom-footer img {
   width: 350px; }
+.bottom-footer p {
+  margin-bottom: 0; }
 
 ul.hotmenu {
   display: flex;
@@ -141,21 +143,21 @@ ul.branch-list {
 
 .card {
   border: 0; }
+  .card img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
   .card.--article h5 {
-    font-size: 1rem; }
+    font-size: 1rem;
+    color: #14b1e7; }
   .card.--article .thumbnail {
     position: relative;
     overflow: hidden; }
     .card.--article .thumbnail:hover img {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
-    .card.--article .thumbnail img {
-      max-width: 100%;
-      max-width: 100%;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .5s ease-in-out;
-      transition: .5s ease-in-out; }
     .card.--article .thumbnail span {
       position: absolute;
       width: 100%;
@@ -167,9 +169,10 @@ ul.branch-list {
       color: white;
       font-weight: 600; }
   .card.--article .footer {
-    display: flex; }
-    .card.--article .footer span, .card.--article .footer a {
-      color: #14b1e7; }
+    display: flex;
+    color: #999; }
+    .card.--article .footer span.date-add, .card.--article .footer a.date-add {
+      color: #999; }
   .card.--promotion .thumbnail {
     display: block;
     position: relative;
@@ -177,12 +180,6 @@ ul.branch-list {
     .card.--promotion .thumbnail:hover img {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
-    .card.--promotion .thumbnail img {
-      max-width: 100%;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .5s ease-in-out;
-      transition: .5s ease-in-out; }
     .card.--promotion .thumbnail h5 {
       position: absolute;
       width: 100%;
@@ -193,12 +190,20 @@ ul.branch-list {
       background-color: rgba(20, 177, 231, 0.8);
       color: white; }
   .card.--branch {
+    top: 0;
     border: 1px solid #14b1e7;
-    border-radius: 0; }
+    border-radius: 0;
+    transition: all .3s; }
+    .card.--branch:hover {
+      background-color: #14b1e7;
+      top: -5px; }
+      .card.--branch:hover h5, .card.--branch:hover .contact {
+        color: white; }
     .card.--branch h5 {
       margin: .5rem;
       font-size: 1.8rem;
-      color: #14b1e7; }
+      color: #14b1e7;
+      transition: all .3s; }
       .card.--branch h5::after {
         content: '';
         display: block;
@@ -209,7 +214,8 @@ ul.branch-list {
     .card.--branch .contact {
       margin: .5rem;
       text-align: center;
-      color: #14b1e7; }
+      color: #14b1e7;
+      transition: all .3s; }
     .card.--branch a {
       width: 50%;
       padding: .5rem;
@@ -258,14 +264,16 @@ ul.branch-list {
     margin: auto;
     margin-bottom: .5rem;
     border: 2px solid #8EAABC;
-    border-radius: 50%; }
+    border-radius: 50%;
+    transition: all .3s; }
     .card.--clinic .thumbnail img {
       width: 100%;
       max-width: 60px;
       max-height: 60px; }
   .card.--clinic h5 {
     font-size: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    color: #14b1e7; }
 
 .carousel-hero-banner {
   background-color: #f5f5f5; }
@@ -320,7 +328,7 @@ ul.branch-list {
     margin-bottom: 0; }
 
 .slick-prev:before, .slick-next:before {
-  color: #047cc1; }
+  color: #999; }
 
 .slick-prev:before {
   font-family: 'Font Awesome 5 Free';

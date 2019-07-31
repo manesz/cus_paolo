@@ -20,7 +20,36 @@ $(document).ready(function(){
 	});
 
 	// SLICK
-	$('.carousel').slick({
+	$('.carousel.--promotion').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+				  slidesToShow: 2,
+				  slidesToScroll: 1,
+				  infinite: true,
+				  dots: true
+				}
+			},
+			{
+				breakpoint: 428,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  infinite: true,
+				  dots: true,
+				  arrows: false
+				}
+			}
+		]
+		
+	});
+	$('.carousel.--blog').slick({
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,

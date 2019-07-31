@@ -95,7 +95,7 @@ section.doctor {
   .tab-branch {
     ul.nav {
       li {
-        width: 16.5%;
+        width: 16.65%;
 
         a {
           text-align: center;
@@ -112,7 +112,7 @@ section.clinic {
   .tab-branch {
     ul.nav {
       li {
-        width: 16.5%;
+        width: 16.65%;
 
         a {
           text-align: center;
@@ -157,6 +157,9 @@ section.consult {
 .bottom-footer {
   img {
     width: 350px;
+  }
+  p {
+    margin-bottom: 0;
   }
 }
 
@@ -240,9 +243,18 @@ ul.branch-list {
 .card {
   border: 0;
 
+  img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+
   &.--article {
     h5 {
       font-size: 1rem;
+      color: #14b1e7;
     }
     .thumbnail {
       position: relative;
@@ -255,14 +267,7 @@ ul.branch-list {
         }
       }
 
-      img {
-        max-width: 100%;
-        max-width: 100%;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-      }
+      img {}
       span {
         position: absolute;
         width: 100%;
@@ -277,12 +282,15 @@ ul.branch-list {
     }
     .footer {
       display: flex;
+      color: #999;
 
       div {}
       span, a {
-        color: #14b1e7;
+        // color: #14b1e7;
 
-        &.date-add {}
+        &.date-add {
+          color: #999;
+        }
       }
     }
   }
@@ -300,13 +308,7 @@ ul.branch-list {
         }
       }
 
-      img {
-        max-width: 100%;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-      }
+      img {}
       h5 {
         position: absolute;
         width: 100%;
@@ -320,13 +322,25 @@ ul.branch-list {
     }
   }
   &.--branch {
+    top: 0;
     border: 1px solid #14b1e7;
     border-radius: 0;
+    transition: all .3s;
+    
+    &:hover {
+      background-color: #14b1e7;
+      top: -5px; 
+      
+      h5, .contact {
+        color: white;
+      }
+    }
 
     h5 {
       margin: .5rem;
       font-size: 1.8rem;
       color: #14b1e7;
+      transition: all .3s;
 
       &::after {
         content: '';
@@ -341,6 +355,7 @@ ul.branch-list {
       margin: .5rem;
       text-align: center;
       color: #14b1e7;
+      transition: all .3s;
     }
     a {
       width: 50%;
@@ -418,6 +433,7 @@ ul.branch-list {
       margin-bottom: .5rem;
       border: 2px solid #8EAABC;
       border-radius: 50%;
+      transition: all .3s;
 
       img {
         width: 100%;
@@ -428,6 +444,7 @@ ul.branch-list {
     h5 {
       font-size: 1.2rem;
       text-align: center;
+      color: #14b1e7;
     }
   }
 }
@@ -513,7 +530,7 @@ ul.branch-list {
   }
 }
 .slick-prev:before, .slick-next:before {
-  color: #047cc1;
+  color: #999;
 }
 .slick-prev:before {
   font-family: 'Font Awesome 5 Free';
