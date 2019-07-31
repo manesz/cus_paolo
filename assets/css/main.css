@@ -353,9 +353,31 @@ ul.branch-list {
   section.consult .consult-form form input[type=submit] {
     width: 100%; }
 
+  section.promotion .slick-prev {
+    left: -15px; }
+  section.promotion .slick-next {
+    right: -15px; }
+
+  section.blog-healthy .slick-prev {
+    left: -15px; }
+  section.blog-healthy .slick-next {
+    right: -15px; }
+
   ul.hotmenu {
-    flex-direction: column; }
+    flex-direction: row; }
     ul.hotmenu li {
-      width: 100%; } }
+      width: 25%; }
+      ul.hotmenu li span {
+        display: none; }
+
+  .slick-dots li button:before {
+    opacity: .75; }
+
+  .slick-prev {
+    left: 0;
+    z-index: 1; }
+
+  .slick-next {
+    right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
