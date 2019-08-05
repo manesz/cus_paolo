@@ -16,6 +16,14 @@ a {
     }
   }
 }
+.--showon {
+  &.-desktop {
+    display: block !important;
+  }
+  &.-mobile {
+    display: none !important;
+  }
+}
 
 // SECTION --------------------------------------------
 section {
@@ -245,6 +253,20 @@ ul.branch-list {
       font-size: 1rem;
       color: white;
       text-align: left;
+    }
+  }
+}
+ul.brach-list-card {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+
+  li {
+    width: 16%;
+    margin-right: .5rem;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
@@ -557,6 +579,15 @@ ul.branch-list {
 // MEDIA QUERY --------------------------------------------
 @media screen and (max-width: 428px) {
   
+  .--showon {
+    &.-desktop {
+      display: none !important;
+    }
+    &.-mobile {
+      display: block !important;
+    }
+  }
+
   a.btn.--viewmore {
     width: 100%;
   }
@@ -614,6 +645,21 @@ ul.branch-list {
         display: none;
       }
       
+    }
+  }
+  ul.brach-list-card {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+  
+    li {
+      width: 47.5%;
+      margin-right: .5rem;
+      margin-bottom: .5rem;
+  
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 

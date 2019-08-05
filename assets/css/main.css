@@ -8,6 +8,11 @@ a.btn.--viewmore {
   background-color: #14b1e7;
   color: white; }
 
+.--showon.-desktop {
+  display: block !important; }
+.--showon.-mobile {
+  display: none !important; }
+
 section {
   padding: 2rem 0; }
   section h1 {
@@ -140,6 +145,16 @@ ul.branch-list {
       font-size: 1rem;
       color: white;
       text-align: left; }
+
+ul.brach-list-card {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap; }
+  ul.brach-list-card li {
+    width: 16%;
+    margin-right: .5rem; }
+    ul.brach-list-card li:last-child {
+      margin-right: 0; }
 
 .card {
   border: 0; }
@@ -341,6 +356,11 @@ ul.branch-list {
   font-weight: 900; }
 
 @media screen and (max-width: 428px) {
+  .--showon.-desktop {
+    display: none !important; }
+  .--showon.-mobile {
+    display: block !important; }
+
   a.btn.--viewmore {
     width: 100%; }
 
@@ -369,6 +389,17 @@ ul.branch-list {
       width: 25%; }
       ul.hotmenu li span {
         display: none; }
+
+  ul.brach-list-card {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    ul.brach-list-card li {
+      width: 47.5%;
+      margin-right: .5rem;
+      margin-bottom: .5rem; }
+      ul.brach-list-card li:last-child {
+        margin-right: 0; }
 
   .slick-dots li button:before {
     opacity: .75; }
