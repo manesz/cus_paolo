@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  background-color: white;
-}
-
 a.btn.--viewmore {
   display: block;
   width: fit-content;
@@ -55,14 +51,18 @@ section.hotmenu.--home {
   padding-top: 0;
   margin-bottom: 0;
 }
-section.hotmenu.--home ul.hotmenu {
-  background-color: #14b1e7;
-}
 section.hotmenu.--home ul.hotmenu.--fixed {
   position: fixed;
   z-index: 20;
 }
 section.hotmenu.--home ul.hotmenu ul.branch-list {
+  display: none;
+}
+section.hotmenu.--content {
+  padding-top: 0;
+  margin-top: 133px;
+}
+section.hotmenu.--content ul.hotmenu ul.branch-list {
   display: none;
 }
 
@@ -125,6 +125,7 @@ ul.hotmenu {
   display: flex;
   width: 100%;
   margin: 0;
+  background-color: #14b1e7;
 }
 ul.hotmenu li {
   position: relative;

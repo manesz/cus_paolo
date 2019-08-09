@@ -1,6 +1,8 @@
 // MAIN DOM --------------------------------------------
 body {
-  background-color: white;
+  &.home {
+    // background-color: white;
+  }
 }
 
 a {
@@ -69,13 +71,23 @@ section.hotmenu {
     
 
     ul.hotmenu {
-      background-color: #14b1e7;
 
       &.--fixed {
         position: fixed;
         z-index: 20;
       }
 
+      ul.branch-list {
+        display: none;
+      }
+    }
+  }
+
+  &.--content {
+    padding-top: 0;
+    margin-top: 133px;
+
+    ul.hotmenu {
       ul.branch-list {
         display: none;
       }
@@ -176,6 +188,7 @@ ul.hotmenu {
   display: flex;
   width: 100%;
   margin: 0;
+  background-color: #14b1e7;
 
   li {
     position: relative;
