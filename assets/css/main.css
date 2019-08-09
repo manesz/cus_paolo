@@ -543,6 +543,10 @@ ul.brach-list-card li:last-child {
   .slick-next {
     right: 0;
   }
+
+  .section-branch {
+    margin-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
