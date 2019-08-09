@@ -469,6 +469,8 @@ ul.brach-list-card {
 
       img {
         width: 100%;
+        min-width: 60px;
+        min-height: 60px;
         max-width: 60px;
         max-height: 60px;
       }
@@ -573,6 +575,41 @@ ul.brach-list-card {
   font-family: 'Font Awesome 5 Free';
   content: "\f054";
   font-weight: 900;
+}
+
+// ACCORDION ----------------------------------------------
+.accordion-branch {
+  .accordion {
+    .card {
+      .card-header {
+        padding: 0;
+        border-bottom: 0;
+
+        h2 {
+          button {
+            width: 100%;
+            text-align: left;
+            text-decoration: none;
+            outline: none;
+            color: #14b1e7;
+            transition: all .3s;
+
+            &:hover {
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .collapse {
+
+        &.show {
+          border-top: 2px solid #14b1e7;
+        }
+      }
+    }
+  }
 }
 
 

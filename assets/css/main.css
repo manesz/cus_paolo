@@ -1,414 +1,543 @@
+@charset "UTF-8";
 body {
-  background-color: white; }
+  background-color: white;
+}
 
 a.btn.--viewmore {
   display: block;
   width: fit-content;
   margin: auto;
   background-color: #14b1e7;
-  color: white; }
-
+  color: white;
+}
 .--showon.-desktop {
-  display: block !important; }
+  display: block !important;
+}
 .--showon.-mobile {
-  display: none !important; }
+  display: none !important;
+}
 
 section {
-  padding: 2rem 0; }
-  section h1 {
-    font-size: 1.8rem; }
-    section h1::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #14b1e7; }
-    section h1 img {
-      max-width: 30px;
-      max-height: 30px;
-      margin-right: .5rem;
-      margin-bottom: .5rem; }
+  padding: 2rem 0;
+}
+section h1 {
+  font-size: 1.8rem;
+}
+section h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #14b1e7;
+}
+section h1 img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 section.feature-banner {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 section.hotmenu {
   display: block;
   position: relative;
-  z-index: 20; }
-  section.hotmenu.--home {
-    display: block;
-    width: 100%;
-    z-index: 20;
-    top: 0;
-    padding-top: 0;
-    margin-bottom: 0; }
-    section.hotmenu.--home ul.hotmenu {
-      background-color: #14b1e7; }
-      section.hotmenu.--home ul.hotmenu.--fixed {
-        position: fixed;
-        z-index: 20; }
-      section.hotmenu.--home ul.hotmenu ul.branch-list {
-        display: none; }
+  z-index: 20;
+}
+section.hotmenu.--home {
+  display: block;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+section.hotmenu.--home ul.hotmenu {
+  background-color: #14b1e7;
+}
+section.hotmenu.--home ul.hotmenu.--fixed {
+  position: fixed;
+  z-index: 20;
+}
+section.hotmenu.--home ul.hotmenu ul.branch-list {
+  display: none;
+}
 
 section.promotion .promotion-content a.btn.--viewmore {
   margin: auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 section.doctor .tab-branch ul.nav li {
-  width: 16.65%; }
-  section.doctor .tab-branch ul.nav li a {
-    text-align: center; }
+  width: 16.65%;
+}
+section.doctor .tab-branch ul.nav li a {
+  text-align: center;
+}
 section.doctor .tab-branch-content {
-  padding: 3rem; }
+  padding: 3rem;
+}
 
 section.clinic .tab-branch ul.nav li {
-  width: 16.65%; }
-  section.clinic .tab-branch ul.nav li a {
-    text-align: center; }
+  width: 16.65%;
+}
+section.clinic .tab-branch ul.nav li a {
+  text-align: center;
+}
 section.clinic .tab-branch-content {
-  padding: 3rem; }
+  padding: 3rem;
+}
 
 section.consult .video-present {
   height: 100%;
   background-image: url("../images/doctor-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+}
 section.consult .consult-form h2 {
   padding: 1rem;
   background-color: #14b1e7;
   font-size: 1.6rem;
   font-weight: 600;
-  color: white; }
+  color: white;
+}
 section.consult .consult-form form {
-  font-size: 1.3rem; }
-  section.consult .consult-form form input[type=submit] {
-    padding: .2rem 2rem !important;
-    background-color: #14b1e7 !important;
-    color: white !important; }
+  font-size: 1.3rem;
+}
+section.consult .consult-form form input[type=submit] {
+  padding: 0.2rem 2rem !important;
+  background-color: #14b1e7 !important;
+  color: white !important;
+}
 
 .bottom-footer img {
-  width: 350px; }
+  width: 350px;
+}
 .bottom-footer p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 ul.hotmenu {
   display: flex;
   width: 100%;
-  margin: 0; }
-  ul.hotmenu li {
-    position: relative;
-    width: 25%;
-    padding: 1.5rem 2rem;
-    flex-direction: column; }
-    ul.hotmenu li:hover {
-      background-color: #047cc1;
-      transition: all .3s; }
-    ul.hotmenu li a {
-      display: block;
-      width: fit-content;
-      margin: auto;
-      font-size: 1.5rem; }
-      ul.hotmenu li a img {
-        max-width: 30px;
-        max-height: 30px;
-        margin-right: .5rem; }
-      ul.hotmenu li a span {
-        font-size: 1.5rem;
-        color: white;
-        font-weight: 600; }
+  margin: 0;
+}
+ul.hotmenu li {
+  position: relative;
+  width: 25%;
+  padding: 1.5rem 2rem;
+  flex-direction: column;
+}
+ul.hotmenu li:hover {
+  background-color: #047cc1;
+  transition: all 0.3s;
+}
+ul.hotmenu li a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.5rem;
+}
+ul.hotmenu li a img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 0.5rem;
+}
+ul.hotmenu li a span {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
 
 ul.nav.nav-tabs li.nav-item a.nav-link {
   border: 1px solid #f0f0f0;
   border-bottom: 0;
   border-radius: 0;
   background-color: #f5f5f5;
-  color: #666; }
-  ul.nav.nav-tabs li.nav-item a.nav-link.active {
-    border-bottom: 2px solid #14b1e7;
-    color: #14b1e7; }
+  color: #666;
+}
+ul.nav.nav-tabs li.nav-item a.nav-link.active {
+  border-bottom: 2px solid #14b1e7;
+  color: #14b1e7;
+}
 
 ul.branch-list {
   position: absolute;
   width: 100%;
-  left: 0; }
-  ul.branch-list li {
-    width: 100%;
-    padding: .5rem;
-    background-color: #047cc1;
-    transition: all .3s; }
-    ul.branch-list li:hover {
-      background-color: #14b1e7; }
-    ul.branch-list li a {
-      font-size: 1rem;
-      color: white;
-      text-align: left; }
+  left: 0;
+}
+ul.branch-list li {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #047cc1;
+  transition: all 0.3s;
+}
+ul.branch-list li:hover {
+  background-color: #14b1e7;
+}
+ul.branch-list li a {
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+}
 
 ul.brach-list-card {
   display: flex;
   width: 100%;
-  flex-flow: row wrap; }
-  ul.brach-list-card li {
-    width: 16%;
-    margin-right: .5rem; }
-    ul.brach-list-card li:last-child {
-      margin-right: 0; }
+  flex-flow: row wrap;
+}
+ul.brach-list-card li {
+  width: 16%;
+  margin-right: 0.5rem;
+}
+ul.brach-list-card li:last-child {
+  margin-right: 0;
+}
 
 .card {
-  border: 0; }
-  .card img {
-    width: 100%;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out; }
-  .card.--article h5 {
-    font-size: 1rem;
-    color: #14b1e7; }
-  .card.--article .thumbnail {
-    position: relative;
-    overflow: hidden; }
-    .card.--article .thumbnail:hover img {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2); }
-    .card.--article .thumbnail span {
-      position: absolute;
-      width: 100%;
-      padding: 0.5rem;
-      margin: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(20, 177, 231, 0.8);
-      color: white;
-      font-weight: 600; }
-  .card.--article .footer {
-    display: flex;
-    color: #999; }
-    .card.--article .footer span.date-add, .card.--article .footer a.date-add {
-      color: #999; }
-  .card.--promotion .thumbnail {
-    display: block;
-    position: relative;
-    overflow: hidden; }
-    .card.--promotion .thumbnail:hover img {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2); }
-    .card.--promotion .thumbnail h5 {
-      position: absolute;
-      width: 100%;
-      padding: .5rem;
-      margin: 0;
-      left: 0;
-      bottom: 0;
-      background-color: rgba(20, 177, 231, 0.8);
-      color: white; }
-  .card.--branch {
-    top: 0;
-    border: 1px solid #14b1e7;
-    border-radius: 0;
-    transition: all .3s; }
-    .card.--branch:hover {
-      background-color: #14b1e7;
-      top: -5px; }
-      .card.--branch:hover h5, .card.--branch:hover .contact {
-        color: white; }
-    .card.--branch h5 {
-      margin: .5rem;
-      font-size: 1.8rem;
-      color: #14b1e7;
-      transition: all .3s; }
-      .card.--branch h5::after {
-        content: '';
-        display: block;
-        width: 40%;
-        height: 2px;
-        margin-top: .5rem;
-        background-color: #14b1e7; }
-    .card.--branch .contact {
-      margin: .5rem;
-      text-align: center;
-      color: #14b1e7;
-      transition: all .3s; }
-    .card.--branch a {
-      width: 50%;
-      padding: .5rem;
-      text-align: center;
-      color: white; }
-      .card.--branch a.visit-site {
-        background-color: #14b1e7; }
-      .card.--branch a.google-map {
-        background-color: #1F429A; }
-  .card.--doctor:hover .thumbnail img {
-    border-color: #14b1e7; }
-  .card.--doctor .thumbnail {
-    width: fit-content;
-    margin: auto; }
-    .card.--doctor .thumbnail img {
-      max-width: 150px;
-      border: 3px solid transparent;
-      transition: all .5s; }
-  .card.--doctor h5 {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #14b1e7;
-    text-align: center; }
-    .card.--doctor h5::after {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 2px;
-      margin: auto;
-      background-color: #14b1e7; }
-  .card.--doctor p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #999;
-    text-align: center; }
-  .card.--clinic:hover .thumbnail {
-    border-color: #14b1e7; }
-  .card.--clinic:hover h5 {
-    color: #14b1e7; }
-  .card.--clinic .thumbnail {
-    width: fit-content;
-    padding: 1.5rem;
-    margin: auto;
-    margin-bottom: .5rem;
-    border: 2px solid #8EAABC;
-    border-radius: 50%;
-    transition: all .3s; }
-    .card.--clinic .thumbnail img {
-      width: 100%;
-      max-width: 60px;
-      max-height: 60px; }
-  .card.--clinic h5 {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #14b1e7; }
+  border: 0;
+}
+.card img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.card.--article h5 {
+  font-size: 1rem;
+  color: #14b1e7;
+}
+.card.--article .thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.card.--article .thumbnail:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card.--article .thumbnail span {
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(20, 177, 231, 0.8);
+  color: white;
+  font-weight: 600;
+}
+.card.--article .footer {
+  display: flex;
+  color: #999;
+}
+.card.--article .footer span.date-add, .card.--article .footer a.date-add {
+  color: #999;
+}
+.card.--promotion .thumbnail {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.card.--promotion .thumbnail:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card.--promotion .thumbnail h5 {
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(20, 177, 231, 0.8);
+  color: white;
+}
+.card.--branch {
+  top: 0;
+  border: 1px solid #14b1e7;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.card.--branch:hover {
+  background-color: #14b1e7;
+  top: -5px;
+}
+.card.--branch:hover h5, .card.--branch:hover .contact {
+  color: white;
+}
+.card.--branch h5 {
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  color: #14b1e7;
+  transition: all 0.3s;
+}
+.card.--branch h5::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin-top: 0.5rem;
+  background-color: #14b1e7;
+}
+.card.--branch .contact {
+  margin: 0.5rem;
+  text-align: center;
+  color: #14b1e7;
+  transition: all 0.3s;
+}
+.card.--branch a {
+  width: 50%;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+}
+.card.--branch a.visit-site {
+  background-color: #14b1e7;
+}
+.card.--branch a.google-map {
+  background-color: #1F429A;
+}
+.card.--doctor:hover .thumbnail img {
+  border-color: #14b1e7;
+}
+.card.--doctor .thumbnail {
+  width: fit-content;
+  margin: auto;
+}
+.card.--doctor .thumbnail img {
+  max-width: 150px;
+  border: 3px solid transparent;
+  transition: all 0.5s;
+}
+.card.--doctor h5 {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #14b1e7;
+  text-align: center;
+}
+.card.--doctor h5::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: auto;
+  background-color: #14b1e7;
+}
+.card.--doctor p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+}
+.card.--clinic:hover .thumbnail {
+  border-color: #14b1e7;
+}
+.card.--clinic:hover h5 {
+  color: #14b1e7;
+}
+.card.--clinic .thumbnail {
+  width: fit-content;
+  padding: 1.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  border: 2px solid #8EAABC;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.card.--clinic .thumbnail img {
+  width: 100%;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+}
+.card.--clinic h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #14b1e7;
+}
 
 .carousel-hero-banner {
-  background-color: #f5f5f5; }
-  .carousel-hero-banner .item {
-    display: block;
-    position: relative;
-    padding: 0; }
-    .carousel-hero-banner .item a {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 0;
-      top: 0;
-      left: 0;
-      padding-top: 36%; }
-    .carousel-hero-banner .item .banner {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: #047cc1;
-      background-position: top center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-      .carousel-hero-banner .item .banner .text {
-        position: absolute;
-        top: 50%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        font-size: 60px;
-        font-weight: 400;
-        color: #14b1e7; }
-        .carousel-hero-banner .item .banner .text h1 {
-          font-size: 100px;
-          font-weight: 600;
-          line-height: 100px; }
-
+  background-color: #f5f5f5;
+}
+.carousel-hero-banner .item {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+.carousel-hero-banner .item a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  padding-top: 36%;
+}
+.carousel-hero-banner .item .banner {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #047cc1;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-hero-banner .item .banner .text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: 400;
+  color: #14b1e7;
+}
+.carousel-hero-banner .item .banner .text h1 {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 100px;
+}
 .carousel .item {
-  padding: .5rem; }
+  padding: 0.5rem;
+}
 
 .slick-dots {
-  bottom: 10px; }
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: white; }
+  bottom: 10px;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
 
 .slick-dotted {
-  bottom: 0; }
-  .slick-dotted.slick-slider {
-    margin-bottom: 0; }
+  bottom: 0;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 
 .slick-prev:before, .slick-next:before {
-  color: #999; }
+  color: #999;
+}
 
 .slick-prev:before {
-  font-family: 'Font Awesome 5 Free';
-  content: "\f053";
-  font-weight: 900; }
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+}
 
 .slick-next:before {
-  font-family: 'Font Awesome 5 Free';
-  content: "\f054";
-  font-weight: 900; }
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+}
+
+.accordion-branch .accordion .card .card-header {
+  padding: 0;
+  border-bottom: 0;
+}
+.accordion-branch .accordion .card .card-header h2 button {
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  outline: none;
+  color: #14b1e7;
+  transition: all 0.3s;
+}
+.accordion-branch .accordion .card .card-header h2 button:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.accordion-branch .accordion .card .collapse.show {
+  border-top: 2px solid #14b1e7;
+}
 
 @media screen and (max-width: 428px) {
   .--showon.-desktop {
-    display: none !important; }
+    display: none !important;
+  }
   .--showon.-mobile {
-    display: block !important; }
+    display: block !important;
+  }
 
   a.btn.--viewmore {
-    width: 100%; }
+    width: 100%;
+  }
 
   section.doctor .tab-branch ul.nav li {
-    width: 100%; }
+    width: 100%;
+  }
 
   section.clinic .tab-branch ul.nav li {
-    width: 100%; }
+    width: 100%;
+  }
 
   section.consult .consult-form form input[type=submit] {
-    width: 100%; }
+    width: 100%;
+  }
 
   section.promotion .slick-prev {
-    left: -15px; }
+    left: -15px;
+  }
   section.promotion .slick-next {
-    right: -15px; }
+    right: -15px;
+  }
 
   section.blog-healthy .slick-prev {
-    left: -15px; }
+    left: -15px;
+  }
   section.blog-healthy .slick-next {
-    right: -15px; }
+    right: -15px;
+  }
 
   ul.hotmenu {
-    flex-direction: row; }
-    ul.hotmenu li {
-      width: 25%; }
-      ul.hotmenu li span {
-        display: none; }
+    flex-direction: row;
+  }
+  ul.hotmenu li {
+    width: 25%;
+  }
+  ul.hotmenu li span {
+    display: none;
+  }
 
   ul.brach-list-card {
     display: flex;
     width: 100%;
-    flex-flow: row wrap; }
-    ul.brach-list-card li {
-      width: 47.5%;
-      margin-right: .5rem;
-      margin-bottom: .5rem; }
-      ul.brach-list-card li:last-child {
-        margin-right: 0; }
+    flex-flow: row wrap;
+  }
+  ul.brach-list-card li {
+    width: 47.5%;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul.brach-list-card li:last-child {
+    margin-right: 0;
+  }
 
   .slick-dots li button:before {
-    opacity: .75; }
+    opacity: 0.75;
+  }
 
   .slick-prev {
     left: 0;
-    z-index: 1; }
+    z-index: 1;
+  }
 
   .slick-next {
-    right: 0; } }
+    right: 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
