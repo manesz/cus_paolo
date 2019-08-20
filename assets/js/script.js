@@ -105,6 +105,9 @@ $(document).ready(function(){
 	ulBranchList();
 	ulBranchListMobile();
 
+	// BUCKET
+	bucketAmountAction();
+
 }); // $(document).ready()
 
 function addYoutubePlayer( objAdd ){
@@ -323,3 +326,24 @@ function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 
 } // if:scWidth > 768 && scroll < 1
 
+function bucketAmountAction(){
+	var itemAmountResult = 0;
+	var btnIncrease = $('a.increase');
+	var btnDecrease = $('a.decrease');
+
+	btnIncrease.on('click', function(){
+		var itemAmount = $(this).siblings('.item-amount');
+		var itemAmountVal = itemAmount.val();
+		itemAmountResult = parseInt(itemAmountVal) + 1;
+
+		itemAmount.val(itemAmountResult);
+	});
+
+	btnDecrease.on('click', function(){
+		var itemAmount = $(this).siblings('.item-amount');
+		var itemAmountVal = itemAmount.val();
+		itemAmountResult = parseInt(itemAmountVal) - 1;
+
+		itemAmount.val(itemAmountResult);
+	});
+}

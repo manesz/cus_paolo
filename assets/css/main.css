@@ -118,6 +118,24 @@ section.consult .consult-form form input[type=submit] {
   color: white !important;
 }
 
+section.register .page-headline {
+  padding: 1rem 0;
+  border-bottom: 4px solid #8DD8F8;
+  color: #3D5FA6;
+}
+section.register form label {
+  display: block;
+}
+section.register form input[type=checkbox], section.register form input[type=radio] {
+  position: relative;
+  top: -2px;
+  margin-right: 0.25rem;
+}
+section.register form .inline-block {
+  min-width: 70px;
+  display: inline-block;
+}
+
 .bottom-footer img {
   width: 350px;
 }
@@ -201,6 +219,151 @@ ul.brach-list-card li {
 }
 ul.brach-list-card li:last-child {
   margin-right: 0;
+}
+
+.contents {
+  padding: 0;
+  margin: 0;
+}
+
+.page-title {
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #14b1e7;
+  border-bottom: 4px solid #8DD8F8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.page-title::after {
+  background: none;
+}
+
+main .date-add {
+  color: #14b1e7;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 38px;
+}
+main .article-title {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+main .article-title span {
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  background: #fff;
+  padding: 0 10px;
+}
+main .content table {
+  margin-bottom: 1rem;
+}
+main .content table tr:nth-child(even) {
+  background: #EAF4FB;
+}
+main .content table tr:nth-child(odd) {
+  background: #D3D3D3;
+}
+main .content table tr td {
+  padding: 1rem;
+  border: 1px solid #999;
+  color: #3D5FA6;
+  font-size: 20px;
+}
+
+aside .consult-form {
+  background-color: #E6E6E6;
+}
+aside .consult-form form {
+  padding: 1rem;
+}
+
+.bucket-list table {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+}
+.bucket-list table tr td {
+  padding: 1rem;
+}
+.bucket-list table thead tr td {
+  background-color: #14B1E6;
+  color: #fff;
+  text-align: center;
+}
+.bucket-list table thead tr td:first-child {
+  width: 10%;
+}
+.bucket-list table thead tr td:nth-child(2) {
+  width: 50%;
+}
+.bucket-list table thead tr td:last-child, .bucket-list table thead tr td:nth-child(3) {
+  width: 20%;
+}
+.bucket-list table tbody tr {
+  border-bottom: 1px solid #f5f5f5;
+}
+.bucket-list table tbody tr td:first-child, .bucket-list table tbody tr td:last-child, .bucket-list table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+.bucket-list .item-amount {
+  text-align: center;
+  border: 0;
+  outline: none;
+}
+.bucket-list .item-price {
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+}
+.bucket-list a.increase, .bucket-list a.decrease {
+  border: none;
+  background-color: transparent;
+  font-size: 26px;
+  color: #14b1e7;
+}
+.bucket-list button.add_to_cart {
+  background-color: #14b1e7;
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+  margin-left: auto;
+  display: block;
+  padding: 0.7rem 1.5rem;
+}
+
+.consult-form h2 {
+  padding: 1rem;
+  background-color: #14b1e7;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+.consult-form .btn.--submit {
+  background: #14b1e7;
+  border-color: #14b1e7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-branch {
+  background-color: #F0EFF4;
+  border-radius: 22px;
+  color: #a8b2b6;
+  border-color: transparent;
+  overflow: hidden;
+}
+.section-branch .custom-select {
+  background-color: #F0EFF4;
+  border-radius: 22px;
+  color: #a8b2b6;
+  border-color: transparent;
+  overflow: hidden;
 }
 
 .card {
@@ -546,6 +709,22 @@ ul.brach-list-card li:last-child {
 
   .section-branch {
     margin-top: 1rem;
+  }
+
+  .social-share ul li a {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .social-share ul li a i {
+    position: relative;
+    top: -3px;
+  }
+
+  .bucket-list .item-amount, .bucket-list .item-price {
+    width: 50px;
+  }
+  .bucket-list table tbody tr td {
+    padding: 1rem 0;
   }
 }
 
