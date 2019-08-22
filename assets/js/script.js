@@ -82,7 +82,7 @@ $(document).ready(function(){
 	$('.carousel-hero-banner').slick({
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
-	  autoplay: true,
+	  autoplay: false, //true,
 	  autoplaySpeed: 2000,
 	  infinite: true,
 	  dots: true,

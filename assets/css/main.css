@@ -640,10 +640,41 @@ aside .consult-form form {
     display: block !important;
   }
 
+  .carousel-hero-banner .item .banner .text {
+    top: 70%;
+  }
+  .carousel-hero-banner .item .banner .text h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .carousel-hero-banner .item .banner .text h1 span {
+    display: inline;
+    top: 0;
+  }
+  .carousel-hero-banner .item .banner .text span {
+    position: relative;
+    top: -2rem;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .mobile-language-change {
+    background-color: #fff;
+  }
+  .mobile-language-change a.mobile-language-change-item {
+    border: none;
+    width: 60px;
+    height: 60px;
+  }
+
   a.btn.--viewmore {
     width: 100%;
   }
 
+  section.doctor a {
+    display: block;
+    position: relative;
+  }
   section.doctor .tab-branch ul.nav li {
     width: 100%;
   }
