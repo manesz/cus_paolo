@@ -76,14 +76,15 @@
     position: relative; cursor: pointer;
 
     .select{
-        background:#fff;
+        background:none; z-index: 1;
+        position: relative;
     }
 
     &:after{
         @include svgmask('../images/icons/chevron-down.svg',#999);
         width:13px; height: 13px; position: absolute;
         right:10px; top: 15px; content:'';
-        z-index: 2;
+        z-index: 0;
     }
 
 

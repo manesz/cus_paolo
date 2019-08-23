@@ -931,7 +931,9 @@ aside .consult-form form {
 }
 
 .box-select .select {
-  background: #fff;
+  background: none;
+  z-index: 1;
+  position: relative;
 }
 
 .box-select:after {
@@ -948,7 +950,7 @@ aside .consult-form form {
   right: 10px;
   top: 15px;
   content: '';
-  z-index: 2;
+  z-index: 0;
 }
 
 .box-select ul.select-list {
