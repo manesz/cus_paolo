@@ -4,6 +4,8 @@ body.home {
 
 a.btn.--viewmore {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   background-color: #14b1e7;
@@ -13,6 +15,7 @@ a.btn.--viewmore {
 .--showon.-desktop {
   display: block !important;
 }
+
 .--showon.-mobile {
   display: none !important;
 }
@@ -20,9 +23,11 @@ a.btn.--viewmore {
 section {
   padding: 2rem 0;
 }
+
 section h1 {
   font-size: 1.8rem;
 }
+
 section h1::after {
   content: '';
   display: block;
@@ -30,6 +35,7 @@ section h1::after {
   height: 2px;
   background-color: #14b1e7;
 }
+
 section h1 img {
   max-width: 30px;
   max-height: 30px;
@@ -47,6 +53,7 @@ section.hotmenu {
   position: relative;
   z-index: 20;
 }
+
 section.hotmenu.--home {
   display: block;
   width: 100%;
@@ -55,17 +62,21 @@ section.hotmenu.--home {
   padding-top: 0;
   margin-bottom: 0;
 }
+
 section.hotmenu.--home ul.hotmenu.--fixed {
   position: fixed;
   z-index: 20;
 }
+
 section.hotmenu.--home ul.hotmenu ul.branch-list {
   display: none;
 }
+
 section.hotmenu.--content {
   padding-top: 0;
   margin-top: 133px;
 }
+
 section.hotmenu.--content ul.hotmenu ul.branch-list {
   display: none;
 }
@@ -78,9 +89,11 @@ section.promotion .promotion-content a.btn.--viewmore {
 section.doctor .tab-branch ul.nav li {
   width: 16.65%;
 }
+
 section.doctor .tab-branch ul.nav li a {
   text-align: center;
 }
+
 section.doctor .tab-branch-content {
   padding: 3rem;
 }
@@ -88,9 +101,11 @@ section.doctor .tab-branch-content {
 section.clinic .tab-branch ul.nav li {
   width: 16.65%;
 }
+
 section.clinic .tab-branch ul.nav li a {
   text-align: center;
 }
+
 section.clinic .tab-branch-content {
   padding: 3rem;
 }
@@ -102,6 +117,7 @@ section.consult .video-present {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
 section.consult .consult-form h2 {
   padding: 1rem;
   background-color: #14b1e7;
@@ -109,9 +125,11 @@ section.consult .consult-form h2 {
   font-weight: 600;
   color: white;
 }
+
 section.consult .consult-form form {
   font-size: 1.3rem;
 }
+
 section.consult .consult-form form input[type=submit] {
   padding: .2rem 2rem !important;
   background-color: #14b1e7 !important;
@@ -121,37 +139,51 @@ section.consult .consult-form form input[type=submit] {
 .bottom-footer img {
   width: 350px;
 }
+
 .bottom-footer p {
   margin-bottom: 0;
 }
 
 ul.hotmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 0;
   background-color: #14b1e7;
 }
+
 ul.hotmenu li {
   position: relative;
   width: 25%;
   padding: 1.5rem 2rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 ul.hotmenu li:hover {
   background-color: #047cc1;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 ul.hotmenu li a {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   font-size: 1.5rem;
 }
+
 ul.hotmenu li a img {
   max-width: 30px;
   max-height: 30px;
   margin-right: .5rem;
 }
+
 ul.hotmenu li a span {
   font-size: 1.5rem;
   color: white;
@@ -165,6 +197,7 @@ ul.nav.nav-tabs li.nav-item a.nav-link {
   background-color: #f5f5f5;
   color: #666;
 }
+
 ul.nav.nav-tabs li.nav-item a.nav-link.active {
   border-bottom: 2px solid #14b1e7;
   color: #14b1e7;
@@ -175,15 +208,19 @@ ul.branch-list {
   width: 100%;
   left: 0;
 }
+
 ul.branch-list li {
   width: 100%;
   padding: .5rem;
   background-color: #047cc1;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 ul.branch-list li:hover {
   background-color: #14b1e7;
 }
+
 ul.branch-list li a {
   font-size: 1rem;
   color: white;
@@ -191,14 +228,21 @@ ul.branch-list li a {
 }
 
 ul.brach-list-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
+
 ul.brach-list-card li {
   width: 16%;
   margin-right: .5rem;
 }
+
 ul.brach-list-card li:last-child {
   margin-right: 0;
 }
@@ -219,6 +263,7 @@ ul.brach-list-card li:last-child {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .page-title::after {
   background: none;
 }
@@ -229,6 +274,7 @@ main .date-add {
   display: inline-block;
   line-height: 38px;
 }
+
 main .article-title {
   width: 100%;
   border-bottom: 1px solid #000;
@@ -236,6 +282,7 @@ main .article-title {
   margin: 10px 0 20px;
   text-align: center;
 }
+
 main .article-title span {
   font-size: 2rem;
   font-style: italic;
@@ -243,15 +290,19 @@ main .article-title span {
   background: #fff;
   padding: 0 10px;
 }
+
 main .content table {
   margin-bottom: 1rem;
 }
+
 main .content table tr:nth-child(even) {
   background: #EAF4FB;
 }
+
 main .content table tr:nth-child(odd) {
   background: #D3D3D3;
 }
+
 main .content table tr td {
   padding: 1rem;
   border: 1px solid #999;
@@ -262,6 +313,7 @@ main .content table tr td {
 aside .consult-form {
   background-color: #E6E6E6;
 }
+
 aside .consult-form form {
   padding: 1rem;
 }
@@ -270,45 +322,56 @@ aside .consult-form form {
   width: 100%;
   border: 1px solid #f5f5f5;
 }
+
 .bucket-list table tr td {
   padding: 1rem;
 }
+
 .bucket-list table thead tr td {
   background-color: #14B1E6;
   color: #fff;
   text-align: center;
 }
+
 .bucket-list table thead tr td:first-child {
   width: 10%;
 }
+
 .bucket-list table thead tr td:nth-child(2) {
   width: 50%;
 }
+
 .bucket-list table thead tr td:last-child, .bucket-list table thead tr td:nth-child(3) {
   width: 20%;
 }
+
 .bucket-list table tbody tr {
   border-bottom: 1px solid #f5f5f5;
 }
+
 .bucket-list table tbody tr td:first-child, .bucket-list table tbody tr td:last-child, .bucket-list table tbody tr td:nth-child(3) {
   text-align: center;
 }
+
 .bucket-list .item-amount {
   text-align: center;
   border: 0;
   outline: none;
 }
+
 .bucket-list .item-price {
   text-align: center;
   border: 0;
   background-color: transparent;
 }
+
 .bucket-list a.increase, .bucket-list a.decrease {
   border: none;
   background-color: transparent;
   font-size: 26px;
   color: #14b1e7;
 }
+
 .bucket-list button.add_to_cart {
   background-color: #14b1e7;
   border: none;
@@ -326,6 +389,7 @@ aside .consult-form form {
   font-weight: 600;
   color: white;
 }
+
 .consult-form .btn.--submit {
   background: #14b1e7;
   border-color: #14b1e7;
@@ -340,6 +404,7 @@ aside .consult-form form {
   border-color: transparent;
   overflow: hidden;
 }
+
 .section-branch .custom-select {
   background-color: #F0EFF4;
   border-radius: 22px;
@@ -351,6 +416,7 @@ aside .consult-form form {
 .card {
   border: 0;
 }
+
 .card img {
   width: 100%;
   -webkit-transform: scale(1);
@@ -358,18 +424,22 @@ aside .consult-form form {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
+
 .card.--article h5 {
   font-size: 1rem;
   color: #14b1e7;
 }
+
 .card.--article .thumbnail {
   position: relative;
   overflow: hidden;
 }
+
 .card.--article .thumbnail:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .card.--article .thumbnail span {
   position: absolute;
   width: 100%;
@@ -381,22 +451,29 @@ aside .consult-form form {
   color: white;
   font-weight: 600;
 }
+
 .card.--article .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #999;
 }
+
 .card.--article .footer span.date-add, .card.--article .footer a.date-add {
   color: #999;
 }
+
 .card.--promotion .thumbnail {
   display: block;
   position: relative;
   overflow: hidden;
 }
+
 .card.--promotion .thumbnail:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .card.--promotion .thumbnail h5 {
   position: absolute;
   width: 100%;
@@ -407,25 +484,32 @@ aside .consult-form form {
   background-color: rgba(20, 177, 231, 0.8);
   color: white;
 }
+
 .card.--branch {
   top: 0;
   border: 1px solid #14b1e7;
   border-radius: 0;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .card.--branch:hover {
   background-color: #14b1e7;
   top: -5px;
 }
+
 .card.--branch:hover h5, .card.--branch:hover .contact {
   color: white;
 }
+
 .card.--branch h5 {
   margin: .5rem;
   font-size: 1.8rem;
   color: #14b1e7;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .card.--branch h5::after {
   content: '';
   display: block;
@@ -434,36 +518,48 @@ aside .consult-form form {
   margin-top: .5rem;
   background-color: #14b1e7;
 }
+
 .card.--branch .contact {
   margin: .5rem;
   text-align: center;
   color: #14b1e7;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .card.--branch a {
   width: 50%;
   padding: .5rem;
   text-align: center;
   color: white;
 }
+
 .card.--branch a.visit-site {
   background-color: #14b1e7;
 }
+
 .card.--branch a.google-map {
   background-color: #1F429A;
 }
+
 .card.--doctor:hover .thumbnail img {
   border-color: #14b1e7;
 }
+
 .card.--doctor .thumbnail {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
+
 .card.--doctor .thumbnail img {
   max-width: 150px;
   border: 3px solid transparent;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
+
 .card.--doctor h5 {
   width: 100%;
   margin-top: 1rem;
@@ -473,6 +569,7 @@ aside .consult-form form {
   color: #14b1e7;
   text-align: center;
 }
+
 .card.--doctor h5::after {
   content: '';
   display: block;
@@ -481,27 +578,35 @@ aside .consult-form form {
   margin: auto;
   background-color: #14b1e7;
 }
+
 .card.--doctor p {
   font-size: 1rem;
   font-weight: 400;
   color: #999;
   text-align: center;
 }
+
 .card.--clinic:hover .thumbnail {
   border-color: #14b1e7;
 }
+
 .card.--clinic:hover h5 {
   color: #14b1e7;
 }
+
 .card.--clinic .thumbnail {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 1.5rem;
   margin: auto;
   margin-bottom: .5rem;
   border: 2px solid #8EAABC;
   border-radius: 50%;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .card.--clinic .thumbnail img {
   width: 100%;
   min-width: 60px;
@@ -509,6 +614,7 @@ aside .consult-form form {
   max-width: 60px;
   max-height: 60px;
 }
+
 .card.--clinic h5 {
   font-size: 1.2rem;
   text-align: center;
@@ -518,11 +624,13 @@ aside .consult-form form {
 .carousel-hero-banner {
   background-color: #f5f5f5;
 }
+
 .carousel-hero-banner .item {
   display: block;
   position: relative;
   padding: 0;
 }
+
 .carousel-hero-banner .item a {
   display: block;
   position: relative;
@@ -532,6 +640,7 @@ aside .consult-form form {
   left: 0;
   padding-top: 36%;
 }
+
 .carousel-hero-banner .item .banner {
   display: block;
   position: absolute;
@@ -544,15 +653,18 @@ aside .consult-form form {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .carousel-hero-banner .item .banner .text {
   position: absolute;
   top: 50%;
   left: 40%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 60px;
   font-weight: 400;
   color: #14b1e7;
 }
+
 .carousel-hero-banner .item .banner .text h1 {
   font-size: 100px;
   font-weight: 600;
@@ -566,6 +678,7 @@ aside .consult-form form {
 .slick-dots {
   bottom: 10px;
 }
+
 .slick-dots li button:before {
   font-size: 12px;
   color: white;
@@ -574,6 +687,7 @@ aside .consult-form form {
 .slick-dotted {
   bottom: 0;
 }
+
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -598,19 +712,22 @@ aside .consult-form form {
   padding: 0;
   border-bottom: 0;
 }
+
 .accordion-branch .accordion .card .card-header h2 button {
   width: 100%;
   text-align: left;
   text-decoration: none;
   outline: none;
   color: #14b1e7;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .accordion-branch .accordion .card .card-header h2 button:hover {
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
+
 .accordion-branch .accordion .card .collapse.show {
   border-top: 2px solid #14b1e7;
 }
@@ -622,39 +739,35 @@ aside .consult-form form {
   .--showon.-mobile {
     display: block !important;
   }
-
   a.btn.--viewmore {
     width: 100%;
   }
-
   section.doctor .tab-branch ul.nav li {
     width: 100%;
   }
-
   section.clinic .tab-branch ul.nav li {
     width: 100%;
   }
-
   section.consult .consult-form form input[type=submit] {
     width: 100%;
   }
-
   section.promotion .slick-prev {
     left: -15px;
   }
   section.promotion .slick-next {
     right: -15px;
   }
-
   section.blog-healthy .slick-prev {
     left: -15px;
   }
   section.blog-healthy .slick-next {
     right: -15px;
   }
-
   ul.hotmenu {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   ul.hotmenu li {
     width: 25%;
@@ -662,11 +775,15 @@ aside .consult-form form {
   ul.hotmenu li span {
     display: none;
   }
-
   ul.brach-list-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   ul.brach-list-card li {
     width: 47.5%;
@@ -676,24 +793,19 @@ aside .consult-form form {
   ul.brach-list-card li:last-child {
     margin-right: 0;
   }
-
   .slick-dots li button:before {
     opacity: .75;
   }
-
   .slick-prev {
     left: 0;
     z-index: 1;
   }
-
   .slick-next {
     right: 0;
   }
-
   .section-branch {
     margin-top: 1rem;
   }
-
   .social-share ul li a {
     width: 35px !important;
     height: 35px !important;
@@ -702,7 +814,6 @@ aside .consult-form form {
     position: relative;
     top: -3px;
   }
-
   .bucket-list .item-amount, .bucket-list .item-price {
     width: 50px;
   }
@@ -710,46 +821,97 @@ aside .consult-form form {
     padding: 1rem 0;
   }
 }
+
+.page-title {
+  margin: 0;
+}
+
+.page-headline {
+  padding: 10px 0;
+  border-bottom: 2px solid #8DD8F8;
+  color: #1e429a;
+}
+
+.page-headline h2 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.breadcrumb {
+  padding: 0 0 15px 0;
+  margin: 0;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-size: 1.45rem;
+}
+
 .frm h3 {
   font-weight: 300;
 }
+
+.frm input[type=text], .frm input[type="tel"], .frm input[type="number"], .frm input[type="password"], .frm input[type="email"] {
+  font-size: 1.3rem;
+}
+
 .frm .section-frm {
   padding: 10px 100px;
 }
+
 .frm label, .frm .box-right, .frm .radio-box {
   vertical-align: middle;
   display: inline-block;
 }
+
 .frm label {
   font-size: 1.5rem;
   text-align: right;
   padding: 0 20px 0 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 300;
+  color: #444;
 }
+
 .frm .box-right {
   display: inline-block;
 }
+
 .frm .radio-box {
   display: inline-block;
 }
-.frm .radio-box input[type=radio], .frm .radio-box span {
+
+.frm .radio-box input[type=radio], .frm .radio-box input[type=checkbox], .frm .radio-box span {
   display: inline-block;
+  vertical-align: middle;
 }
+
 .frm .radio-box .form-check-input {
   position: static;
   margin: 0 5px 0 0;
 }
+
 .frm .radio-box span {
   font-size: 1.2rem;
   margin-right: 25px;
 }
+
 .frm .frm-col label {
-  width: 150px;
+  width: 36%;
 }
+
 .frm .frm-col .box-right {
-  width: 60%;
+  width: 63%;
 }
+
+.frm .frm-row label {
+  width: 17%;
+}
+
+.frm .frm-row .box-right {
+  width: 82.5%;
+}
+
 .frm .sep {
   background: #ccc;
   height: 10px;
@@ -758,21 +920,85 @@ aside .consult-form form {
   margin: 0 10px !important;
   vertical-align: middle;
 }
+
 .frm .btn {
   padding: 0px 30px;
 }
 
-section.register .page-title {
-  margin: 0;
-}
-section.register .page-headline {
-  padding: 10px 0;
-  border-bottom: 2px solid #8DD8F8;
-  color: #1e429a;
-}
-section.register .page-headline h2 {
-  padding: 0;
-  font-size: 1.5rem;
+.box-select {
+  position: relative;
+  cursor: pointer;
 }
 
+.box-select .select {
+  background: #fff;
+}
+
+.box-select:after {
+  -webkit-mask-image: url("../images/icons/chevron-down.svg");
+  mask-image: url("../images/icons/chevron-down.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #999;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  content: '';
+  z-index: 2;
+}
+
+.box-select ul.select-list {
+  background: #8dd6f7;
+  position: absolute;
+  padding: 7px 0;
+  top: 50px;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  border: 1px solid #8dd6f7;
+  display: none;
+}
+
+.box-select ul.select-list li {
+  cursor: pointer;
+  padding: 2px 15px;
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/*/////////////// Responsive ////////////////*/
+@media only screen and (max-width: 991px) {
+  .frm .section-frm {
+    padding: 10px 10px;
+  }
+  .frm .frm-col label, .frm .frm-row label {
+    width: 30%;
+  }
+  .frm .frm-col .box-right, .frm .frm-row .box-right {
+    width: 68%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .frm .section-frm {
+    padding: 0 0 20px 0;
+  }
+  .frm .frm-col label, .frm .frm-row label {
+    width: 100%;
+    margin: 0 0 5px;
+    text-align: left;
+  }
+  .frm .frm-col .box-right, .frm .frm-row .box-right {
+    width: 100%;
+  }
+  .frm .btn {
+    width: 100%;
+    padding: 5px 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

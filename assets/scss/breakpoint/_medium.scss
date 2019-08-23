@@ -1,0 +1,19 @@
+
+
+@include breakpoint(medium) {
+    .frm {
+        .section-frm{
+            padding:10px 10px; 
+        }
+
+        .frm-col, .frm-row {
+            label{
+                width:30%;    
+            }
+            
+            .box-right{
+                width:68%;
+            }
+        }
+    }
+} 

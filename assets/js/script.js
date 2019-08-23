@@ -1,5 +1,42 @@
 $(document).ready(function(){
 
+	// SELECT BOX LIST
+	$('.box-select').not('.list-show').on('click','.select',function(){
+		var this_p = $(this).parents('.box-select');
+		var list_box = this_p.find('ul.select-list');
+
+		//this_p.toggleClass('list-show');
+		//$('.box-select').not('.list-show').find('.select-list').slideUp(50);
+		list_box.slideToggle(150);
+	});
+	//SELECT LIST ON CLICK
+	$('.select-list').on('click','li',function(){
+		var this_p = $(this).parents('.box-select');
+		var this_text = $(this).text();
+		var this_id = $(this).attr('id');
+
+		this_p.find('.select').val(this_text);
+		this_p.find('.select-val').val(this_id);
+		$(this).parents('.select-list').hide();
+	});
+	//CLOSE SELECT LIST ON CLICK OUTSIDE
+	$(document).mouseup(function (e){
+
+		var container = $(".box-select");
+
+		if (!container.is(e.target) // if the target of the click isn't the container...
+			&& container.has(e.target).length === 0) // ... nor a descendant of the container
+		{
+			$('.select-list').hide();
+			container.removeClass('list-show');
+		}
+	});
+
+
+
+
+
+
 	addYoutubePlayer( 'a.video_pop_up' )
 	closeYoutubePlayer('.close', '.hide_overlay');
 

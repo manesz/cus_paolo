@@ -1,0 +1,34 @@
+@mixin gradient($from,$start,$end){
+	background: -webkit-linear-gradient($from,$start, $end); 
+	background: -o-linear-gradient($from,$start, $end); 
+	background: -moz-linear-gradient($from,$start, $end); 
+	background: -ms-linear-gradient($from,$start, $end);
+	background: linear-gradient($from,$start, $end);
+}
+
+
+
+@mixin transition($time){
+	transition:ease-in-out $time;
+	-webkit-transition:ease-in-out $time;
+	-ms-transition:ease-in-out $time;
+	-moz-transition:ease-in-out $time; 
+}
+
+@mixin boxshadow($style,$color){
+	box-shadow:$style $color;
+	-webkit-box-shadow:$style $color;
+	-ms-box-shadow:$style $color;
+	-moz-box-shadow:$style $color;
+}
+
+
+@mixin svgmask($img,$color){
+	-webkit-mask-image:url($img);
+	mask-image:url($img);
+	-webkit-mask-repeat:no-repeat;
+	mask-repeat: no-repeat; 
+	-webkit-mask-size:cover;
+	mask-size:cover;
+	background-color:$color;  
+}

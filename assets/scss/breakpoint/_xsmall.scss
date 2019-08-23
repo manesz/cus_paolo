@@ -1,0 +1,22 @@
+@include breakpoint(xsmall) {
+    .frm {
+        .section-frm{
+            padding:0 0 20px 0;
+        }
+
+        .frm-col, .frm-row {
+            label{
+                width:100%;  margin:0 0 5px;
+                text-align: left;
+            }
+            
+            .box-right{
+                width:100%;
+            }
+        }
+
+        .btn{
+            width:100%; padding:5px 0;
+        }
+    }
+}

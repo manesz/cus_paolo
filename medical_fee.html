@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>:: Register ::</title>
+    <title>:: Medical fee ::</title>
 
     <!-- Bootstrap core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -236,16 +236,15 @@
         </section>
         
         <!-- Page Content -->
-        <section class="register content">
+        <section class="medical_fee content">
 
             <!--breadcrumb-->
             <nav class="breadcrumb">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <a class="breadcrumb-item" href="#">หน้าแรก</a>
-                            <span class="breadcrumb-item active">บทความ</span>
-                            <span class="breadcrumb-item active">นมแม่ ทุนสมองของลูกรัก</span>
+                            <a class="breadcrumb-item" href="#">หน้าหลัก</a>
+                            <span class="breadcrumb-item active">ชำระค่าบริการ</span>
                         </div>
                     </div>
                 </div>
@@ -260,14 +259,14 @@
                         <!-- TITLE -->
                         <div class="row">
                             <div class="col-12">
-                                <h1 class="page-title">REGISTER</h1>
+                                <h1 class="page-title">ชำระค่ารักษาพยาบาล</h1>
                             </div>
                         </div>
 
                         <!-- HEADER LINE -->
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="page-headline">Member registration</h2>
+                                <h2 class="page-headline">ข้อมูลผู้ป่วย</h2>
                             </div>
                         </div>
 
@@ -275,40 +274,14 @@
                         <main class="">
                                 
                             <form action="javascript:;" class="frm">
-                                <h3>กรอกข้อมูลส่วนตัว</h3>
                                 <!-- TITLE -->
                                 <div class="section-frm">
-                                    <div class="row">
-                                        <div class="col-12 frm-row">
-                                            <div class="form-group">
-                                                <label for="">Title :</label>
-                                                <div class="box-right">
-                                                    <div class="radio-box">
-                                                        <input class="form-check-input" type="radio" name="register-title" id="register-title-mr" value="mr" checked>
-                                                        <span>Mr.</span>
-                                                    </div>
-
-                                                    <div class="radio-box">
-                                                        <input class="form-check-input" type="radio" name="register-title" id="register-title-mrs" value="mr" checked>
-                                                        <span>Mrs.</span>
-                                                    </div>
-
-                                                    <div class="radio-box">
-                                                        <input class="form-check-input" type="radio" name="register-title" id="register-title-miss" value="mr" checked>
-                                                        <span>Miss.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-
-                                    <!-- NAME & SURNAME -->
+                                    
                                     <div class="row">
 
                                         <div class="col-lg-6 frm-col">
                                             <div class="form-group">
-                                                <label for="">Name :</label>
+                                                <label for="">ขื่อ :</label>
                                                 <div class="box-right">
                                                         <input type="text" class="form-control" id="" name="">
                                                 </div>
@@ -317,116 +290,109 @@
 
                                         <div class="col-lg-6 frm-col">
                                             <div class="form-group">
-                                                <label for="">Surname :</label>
+                                                <label for="">โรงพยาบาล :</label>
                                                 <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- DOB & EMAIL -->
-                                    <div class="row">
-
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Date of Birth :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" data-field="date" id="" name="">
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="dtBox"></div>
-
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Email :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Mobile :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-12 frm-row">
-                                            <div class="form-group">
-                                                <label for="">Address :</label>
-                                                <div class="box-right">
-                                                    <textarea type="text" class="form-control" id="" name="" rows="5"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div><!-- end .section-frm -->
-
-                                <h3>ข้อมูลการเข้าสู่ระบบ</h3>
-                                <div class="section-frm">
-                                    <div class="row">
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Username :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Password :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-6 frm-col">
-                                            <div class="form-group">
-                                                <label for="">Retry Password :</label>
-                                                <div class="box-right">
-                                                    <input type="text" class="form-control" id="" name="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-12 frm-row">
-                                            <div class="form-group">
-                                                <label for=""></label>
-                                                <div class="box-right">
-                                                    <div class="radio-box">
-                                                        <input class="form-check-input" type="checkbox" name="" id="" value="">
-                                                        <span class="mr-0">ยอมรับเงื่อนไขการสมัคร</span>
-                                                        <span class="sep"></span>
-                                                        <a href="#">เงื่อนไขการสมัคร</a>
+                                                    <div class="box-select">
+                                                        <input type="text" class="form-control select" id="" name="" value="" readonly>
+                                                        <input type="hidden" class="select-val" name="" value="">
+                                                        <ul class="select-list">
+                                                            <li id="1">โรงพยาบาล 1</li>
+                                                            <li id="2">โรงพยาบาล 2</li>
+                                                            <li id="3">โรงพยาบาล 3</li>
+                                                            <li id="4">โรงพยาบาล 4</li>
+                                                            <li id="5">โรงพยาบาล 5</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="frm-row">
-                                        <label for=""></label>
-                                        <button type="submit" class="btn btn-primary">Register</button>
+                                    <div class="row">
+
+                                        <div class="col-lg-6 frm-col">
+                                            <div class="form-group">
+                                                <label for="">นามสกุล :</label>
+                                                <div class="box-right">
+                                                    <input type="text" class="form-control"  id="" name="">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 frm-col">
+                                            <div class="form-group">
+                                                <label for="">ประเภทผู้ป่วย :</label>
+                                                <div class="box-right">
+                                                    <div class="box-select">
+                                                        <input type="text" class="form-control select" id="" name="" value="" readonly>
+                                                        <input type="hidden" class="select-val" name="" value="">
+                                                        <ul class="select-list">
+                                                            <li id="1">ประเภทผู้ป่วย 1</li>
+                                                            <li id="2">ประเภทผู้ป่วย 2</li>
+                                                            <li id="3">ประเภทผู้ป่วย 3</li>
+                                                            <li id="4">ประเภทผู้ป่วย 4</li>
+                                                            <li id="5">ประเภทผู้ป่วย 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 frm-col">
+                                            <div class="form-group">
+                                                <label for="">HN Number :</label>
+                                                <div class="box-right">
+                                                    <input type="text" class="form-control"  id="" name="">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 frm-col">
+                                            <div class="form-group">
+                                                <label for="">หมายเลขห้อง :</label>
+                                                <div class="box-right">
+                                                    <input type="text" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div><!-- end .row -->
+
+                                     <div class="row">
+                                        <div class="col-lg-6 frm-col">
+                                            
+                                        </div>
+
+                                        <div class="col-lg-6 frm-col">
+                                            <div class="form-group">
+                                                <label for="">ความสัมพันธ์ :</label>
+                                                <div class="box-right">
+                                                    <input type="text" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end .row -->
+
+                                    <div class="row">
+                                        <div class="col-lg-12 frm-row">
+                                            <div class="form-group">
+                                                <label for="">จำนวนเงิน :</label>
+                                                <div class="box-right">
+                                                    <input type="text" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end .row -->
+                                    
+
+
+                                    <div class="frm-row text-right">
+                                        <button type="submit" class="btn btn-primary">Check out</button>
+                                    </div>
+
                                 </div><!-- end .section-frm -->
 
                             </form>
@@ -581,6 +547,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="libs/datepicker/DateTimePicker.css" />
     <script type="text/javascript" src="libs/datepicker/DateTimePicker.js"></script>

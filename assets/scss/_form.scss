@@ -3,6 +3,10 @@
         font-weight: 300;
     }
 
+    input[type=text],input[type="tel"],input[type="number"],input[type="password"],input[type="email"]{
+        font-size:1.3rem;
+    }
+
     .section-frm{
         padding:10px 100px;
     }
@@ -13,7 +17,7 @@
     label{
         font-size:1.5rem; text-align: right;
         padding:0 20px 0 0; box-sizing: border-box;
-        font-weight: 300;
+        font-weight: 300; color:#444;
     }
 
     .box-right{
@@ -23,8 +27,9 @@
     .radio-box{
         display: inline-block;
 
-        input[type=radio], span{
+        input[type=radio],input[type=checkbox], span{
             display:inline-block;
+            vertical-align: middle;
         }
 
         .form-check-input{
@@ -38,11 +43,21 @@
 
     .frm-col{
         label{
-            width:150px;
+            width:36%;
+        }
+
+        .box-right{ 
+            width:63%;
+        }
+    }
+
+    .frm-row{
+        label{
+            width:17%;
         }
 
         .box-right{
-            width:60%;
+            width: 82.5%;
         }
     }
 
@@ -52,6 +67,38 @@
     }
 
     .btn{
-        padding:0px 30px;
+        padding:0px 30px; 
+    }
+}
+
+
+.box-select{
+    position: relative; cursor: pointer;
+
+    .select{
+        background:#fff;
+    }
+
+    &:after{
+        @include svgmask('../images/icons/chevron-down.svg',#999);
+        width:13px; height: 13px; position: absolute;
+        right:10px; top: 15px; content:'';
+        z-index: 2;
+    }
+
+
+    ul.select-list{
+        background:$themecolor3;
+        position: absolute; padding:7px 0;
+        top:50px; left:0; z-index: 3;
+        width:100%; border:1px solid $themecolor3;
+        display:none; 
+
+        li{
+            cursor: pointer;
+            padding:2px 15px; display: block;
+            color:#fff; font-size:1.2rem;
+        
+        }
     }
 }
