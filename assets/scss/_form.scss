@@ -1,0 +1,57 @@
+.frm{
+    h3{
+        font-weight: 300;
+    }
+
+    .section-frm{
+        padding:10px 100px;
+    }
+
+    label, .box-right, .radio-box{
+        vertical-align: middle; display: inline-block;
+    }
+    label{
+        font-size:1.5rem; text-align: right;
+        padding:0 20px 0 0; box-sizing: border-box;
+        font-weight: 300;
+    }
+
+    .box-right{
+        display:inline-block;
+    }
+
+    .radio-box{
+        display: inline-block;
+
+        input[type=radio], span{
+            display:inline-block;
+        }
+
+        .form-check-input{
+            position: static; margin:0 5px 0 0;
+        }
+
+        span{
+            font-size:1.2rem; margin-right:25px;
+        }
+    }
+
+    .frm-col{
+        label{
+            width:150px;
+        }
+
+        .box-right{
+            width:60%;
+        }
+    }
+
+    .sep{
+        background:#ccc; height: 10px; width:1px; display: inline-block;
+        margin:0 10px !important; vertical-align: middle;
+    }
+
+    .btn{
+        padding:0px 30px;
+    }
+}
