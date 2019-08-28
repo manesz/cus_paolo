@@ -1106,6 +1106,34 @@ aside .consult-form form {
   background: #1e429a;
 }
 
+.delete {
+  cursor: pointer;
+}
+
+#cart-page .cart-list table td:nth-child(1) {
+  width: 10%;
+}
+
+#cart-page .cart-list table td:nth-child(2) {
+  width: 10%;
+}
+
+#cart-page .cart-list table td:nth-child(3) {
+  width: 10%;
+}
+
+#cart-page .cart-list table td:nth-child(4) {
+  width: 10%;
+}
+
+#cart-page .cart-list table td:nth-child(5) {
+  width: 10%;
+}
+
+#cart-page .cart-list table td:nth-child(6) {
+  width: 10%;
+}
+
 /*/////////////// Responsive ////////////////*/
 @media only screen and (max-width: 991px) {
   .frm .section-frm {

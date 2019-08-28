@@ -9,7 +9,7 @@
     right:0; bottom:0; z-index: 1;
 
     .process{
-        text-align: center;
+        text-align: center;   
 
         i{
             background:#e6e6e6; width:52px; height: 52px;
@@ -89,4 +89,43 @@
     .bar.active{
         background:$themecolor1;
     }
+}
+
+
+
+.delete{
+    cursor: pointer;
+}
+#cart-page{
+    .cart-list{
+        table{
+            td{
+                &:nth-child(1){
+                    width:10%
+                }
+        
+                &:nth-child(2){ 
+                    width:10%
+                }
+        
+                &:nth-child(3){
+                    width:10%
+                }
+        
+                &:nth-child(4){
+                    width:10%
+                }
+        
+                &:nth-child(5){
+                    width:10%
+                }
+        
+                &:nth-child(6){
+                    width:10%
+                }
+            }
+        } 
+    }
+    
+    
 }
