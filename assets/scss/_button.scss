@@ -1,0 +1,24 @@
+ .btn{
+     border:1px solid $themecolor2; padding:3px 10px;
+     text-align: center; color:$themecolor2;
+     @include transition(200ms); cursor: pointer;
+     font-size:1.2rem; box-sizing: border-box;
+     height: auto;
+ }
+
+ .btn-cart1{
+     @extend .btn;
+
+     &:hover{
+         background:$themecolor2; color:#fff;
+     }
+ }
+
+ .btn-cart2{
+    @extend .btn; border:none;
+    background:$themecolor2; color:#fff; 
+
+    &:hover{
+        background:$themecolor1;
+    }
+ }

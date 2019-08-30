@@ -100,32 +100,48 @@
     .cart-list{
         table{
             td{
+                font-size:1.3rem; line-height: 1;
+                padding:10px 5px;
+                border-bottom:1px solid #ddd;
+
                 &:nth-child(1){
-                    width:10%
+                    width:7%;
                 }
         
                 &:nth-child(2){ 
-                    width:10%
+                    width:45%;
                 }
         
                 &:nth-child(3){
-                    width:10%
+                    width:15%;
                 }
         
                 &:nth-child(4){
-                    width:10%
+                    width:10%; text-align: center;
                 }
         
                 &:nth-child(5){
-                    width:10%
+                    width:15%; text-align: center;
                 }
         
-                &:nth-child(6){
-                    width:10%
+                &:nth-child(6){ 
+                    width:7%; text-align: center;
+                    color:#f00;
+                }
+
+                input[type=text]{
+                    width:50px; display:inline-block;
+                }
+
+                input.item-amount{
+                    width:32px;
                 }
             }
         } 
     }
     
+    .cart-btn{
+        padding:10px 0 30px; text-align: right;
+    }
     
 }

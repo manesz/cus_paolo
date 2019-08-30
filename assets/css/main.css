@@ -2,7 +2,7 @@ body.home {
   background-color: white;
 }
 
-a.btn.--viewmore {
+a.btn.--viewmore, a.--viewmore.btn-cart1, a.--viewmore.btn-cart2 {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -81,7 +81,7 @@ section.hotmenu.--content ul.hotmenu ul.branch-list {
   display: none;
 }
 
-section.promotion .promotion-content a.btn.--viewmore {
+section.promotion .promotion-content a.btn.--viewmore, section.promotion .promotion-content a.--viewmore.btn-cart1, section.promotion .promotion-content a.--viewmore.btn-cart2 {
   margin: auto;
   margin-top: 2rem;
 }
@@ -390,7 +390,7 @@ aside .consult-form form {
   color: white;
 }
 
-.consult-form .btn.--submit {
+.consult-form .btn.--submit, .consult-form .--submit.btn-cart1, .consult-form .--submit.btn-cart2 {
   background: #14b1e7;
   border-color: #14b1e7;
   color: #fff;
@@ -739,7 +739,7 @@ aside .consult-form form {
   .--showon.-mobile {
     display: block !important;
   }
-  a.btn.--viewmore {
+  a.btn.--viewmore, a.--viewmore.btn-cart1, a.--viewmore.btn-cart2 {
     width: 100%;
   }
   section.doctor .tab-branch ul.nav li {
@@ -820,6 +820,37 @@ aside .consult-form form {
   .bucket-list table tbody tr td {
     padding: 1rem 0;
   }
+}
+
+.btn, .btn-cart1, .btn-cart2 {
+  border: 1px solid #14b1e6;
+  padding: 3px 10px;
+  text-align: center;
+  color: #14b1e6;
+  transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  -ms-transition: ease-in-out 200ms;
+  -moz-transition: ease-in-out 200ms;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+}
+
+.btn-cart1:hover {
+  background: #14b1e6;
+  color: #fff;
+}
+
+.btn-cart2 {
+  border: none;
+  background: #14b1e6;
+  color: #fff;
+}
+
+.btn-cart2:hover {
+  background: #1e429a;
 }
 
 .page-title {
@@ -922,7 +953,7 @@ aside .consult-form form {
   vertical-align: middle;
 }
 
-.frm .btn {
+.frm .btn, .frm .btn-cart1, .frm .btn-cart2 {
   padding: 0px 30px;
 }
 
@@ -1110,28 +1141,53 @@ aside .consult-form form {
   cursor: pointer;
 }
 
+#cart-page .cart-list table td {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
 #cart-page .cart-list table td:nth-child(1) {
-  width: 10%;
+  width: 7%;
 }
 
 #cart-page .cart-list table td:nth-child(2) {
-  width: 10%;
+  width: 45%;
 }
 
 #cart-page .cart-list table td:nth-child(3) {
-  width: 10%;
+  width: 15%;
 }
 
 #cart-page .cart-list table td:nth-child(4) {
   width: 10%;
+  text-align: center;
 }
 
 #cart-page .cart-list table td:nth-child(5) {
-  width: 10%;
+  width: 15%;
+  text-align: center;
 }
 
 #cart-page .cart-list table td:nth-child(6) {
-  width: 10%;
+  width: 7%;
+  text-align: center;
+  color: #f00;
+}
+
+#cart-page .cart-list table td input[type=text] {
+  width: 50px;
+  display: inline-block;
+}
+
+#cart-page .cart-list table td input.item-amount {
+  width: 32px;
+}
+
+#cart-page .cart-btn {
+  padding: 10px 0 30px;
+  text-align: right;
 }
 
 /*/////////////// Responsive ////////////////*/
@@ -1159,7 +1215,7 @@ aside .consult-form form {
   .frm .frm-col .box-right, .frm .frm-row .box-right {
     width: 100%;
   }
-  .frm .btn {
+  .frm .btn, .frm .btn-cart1, .frm .btn-cart2 {
     width: 100%;
     padding: 5px 0;
   }
