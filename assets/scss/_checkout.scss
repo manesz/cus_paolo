@@ -1,0 +1,30 @@
+.login-link{
+    padding:20px; 
+
+    a,span{
+        display:inline-block; vertical-align: middle;
+    }
+
+    a{
+        color:$themecolor3; 
+    }
+
+    .forgot{
+        color:#ccc; 
+    }
+
+    span{
+        height: 10px; width:1px; background:#ccc;
+        margin:0 10px;
+    }
+}
+
+.login-left{
+    padding-right:50px; padding-top:15px;
+    border-right:2px solid $themecolor3;
+}
+
+.login-right{
+    padding:20px 0 0 40px;
+    font-size:1.4rem; color:#444;
+}
