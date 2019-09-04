@@ -28,3 +28,20 @@
     padding:20px 0 0 40px;
     font-size:1.4rem; color:#444;
 }
+
+
+.payment-status{
+    text-align: center; padding:50px 0;
+
+    img{
+        max-width: 100%;
+        width:100px;
+        display:inline-block;
+    }
+
+    span{
+        display: inline-block; clear: both;
+        font-size:1.8rem;
+        margin:20px 0 0;
+    }
+}

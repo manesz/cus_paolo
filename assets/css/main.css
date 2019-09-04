@@ -1226,6 +1226,24 @@ aside .consult-form form {
   color: #444;
 }
 
+.payment-status {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.payment-status img {
+  max-width: 100%;
+  width: 100px;
+  display: inline-block;
+}
+
+.payment-status span {
+  display: inline-block;
+  clear: both;
+  font-size: 1.8rem;
+  margin: 20px 0 0;
+}
+
 /*/////////////// Responsive ////////////////*/
 @media only screen and (max-width: 991px) {
   .frm .section-frm {
