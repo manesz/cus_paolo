@@ -1,4 +1,16 @@
 
 @include breakpoint(small) {
-    
+    .cart-process{
+        width:100%; 
+
+        .process{
+            span{
+                font-size:1rem;
+            }
+        }
+    }
+
+    .cart-bar{
+        display: none;
+    }
 }
