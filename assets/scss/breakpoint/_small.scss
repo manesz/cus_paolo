@@ -1,5 +1,21 @@
 
 @include breakpoint(small) {
+    ul.hotmenu {
+        li {
+            padding:10px 0; text-align: center;
+
+            a {
+                span{
+                    font-size:1rem; display:block;
+                }
+            }
+        }
+    }
+
+    section.hotmenu.--content{
+        margin-top:40px;
+    }
+
     .cart-process{
         width:100%; 
 

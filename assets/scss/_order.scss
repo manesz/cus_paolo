@@ -1,0 +1,73 @@
+.order-list{
+    @extend .payment-list;
+    table{
+        td{
+            color:#888;
+
+            input{
+                color:#888;
+            }
+        }
+        thead{
+            tr{
+                td{
+                    background:#eaeaea;
+                    color:#7c7c7c;
+                }
+            }
+        }
+    }
+}
+
+
+.head-order{
+    color:#888; font-size:0.9rem;
+    font-family: 'Sarabun';
+    font-weight: 300;
+    padding:0;
+
+    .border-bottom{
+        border-bottom:1px solid #ccc;
+        padding:0 0 10px; margin:0 0 10px;
+    }
+
+    .bg{
+        background:#eaeaea; margin:0; padding:5px 0;
+        font-size:1rem;
+    }
+
+    span{
+        display:inline-block; 
+    }
+
+    .label{
+        padding:0 10px 0 0;
+    }
+}
+
+.total-row{
+    font-size:2rem; color:#888;
+    padding-top:20px; 
+    line-height: 1;
+    padding-bottom:30px;
+    border-bottom:3px double #ccc;
+
+    span{
+        padding-left:20px;
+    }
+
+    i{
+        font-size:1rem; display:block;
+        width:100%; font-style: normal;
+    }
+}
+
+.order-foot{
+    color:#888; font-size:1.1rem;
+}
+
+.btn-print{
+    i{
+        margin:0 10px 0 0;  display:inline-block; vertical-align: middle;
+    }
+}
