@@ -327,6 +327,7 @@ aside .consult-form form {
 
 .bucket-list table tr td {
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .bucket-list table thead tr td {
@@ -853,6 +854,11 @@ aside .consult-form form {
 
 .btn-cart2:hover {
   background: #1e429a;
+}
+
+.radius-search .btn, .radius-search .btn-cart1, .radius-search .btn-cart2 {
+  border: none;
+  line-height: 2;
 }
 
 .page-title {
@@ -1399,6 +1405,14 @@ aside .consult-form form {
 }
 
 /*/////////////// Responsive ////////////////*/
+@media only screen and (max-width: 1100px) {
+  #cart-page .cart-list table td:nth-child(4) a, #cart-page .cart-list table td:nth-child(4) input {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .frm .section-frm {
     padding: 10px 10px;

@@ -1,6 +1,17 @@
 
 @include breakpoint(large) {  
-   
+    #cart-page {
+        .cart-list {
+            table {
+                td:nth-child(4){
+                    a,input{
+                        display:block; text-align: center;
+                        margin:auto;
+                    }
+                }
+            }
+        }
+    }
 }
 	
 
