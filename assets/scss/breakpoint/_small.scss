@@ -29,4 +29,161 @@
     .cart-bar{
         display: none;
     }
+
+    .bucket-list{
+        table{
+            thead{
+                display:none;
+            }
+
+            tbody{
+                
+                td{
+                    display:block; width:100% !important;     
+                    text-align: left !important;
+                    position: relative; padding-left:34% !important;
+                    
+
+                    &:nth-child(1){
+                        &:before{
+                            content:'เลือก';
+                        }
+                    }
+
+                    &:nth-child(2){
+                        &:before{
+                            content:'รายการ';
+                        }
+                    }
+
+                    &:nth-child(3){
+                        &:before{
+                            content:'จำนวน';
+                        }
+                    }
+
+                    &:nth-child(4){
+                        &:before{
+                            content:'ราคา';
+                        }
+                    }
+
+                    &:last-child{
+                        
+                    }
+
+                    &:before{
+                        display:inline-block; 
+                        width:30%; position: absolute;
+                        background:$themecolor2;
+                        left:0; top:0; height: 100%;
+                        text-align: center;
+                        color:#fff; display:flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    input.item-amount{
+                        border:1px solid #ddd;
+                        display:inline-block !important; 
+                        vertical-align: middle;
+                        margin:0 3px !important;
+                    }
+
+                    .item-price{
+                        width:80px; 
+                        text-align: left;
+                        color:$themecolor1;
+                    }
+                }
+            }
+
+            a.increase, a.decrease{
+                background:$themecolor1; color:#fff;
+                padding:0px; vertical-align: middle;
+                display:inline-block !important;
+                height: 30px; width:30px;
+                line-height: 1;
+            }
+
+            tr{
+                &:nth-child(even){
+                    td{
+                        background:#f2f2f2;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #cart-page{
+        .cart-list{
+            table{
+                 tbody{
+                     td{
+                         border:none; 
+                         
+                         &:nth-child(4){
+                             &:before{
+                                 content:'จำนวน';
+                             }
+                         }
+     
+                         &:nth-child(3){
+                             &:before{
+                                 content:'ราคา';
+                             }
+                         }
+
+                         &:nth-child(5){
+                            &:before{
+                                content:'ราคารวม';
+                            }
+                        }
+
+                        &:nth-child(6){
+                            &:before{
+                                content:'ลบ';
+                            }
+                        }
+     
+                     }
+                 }
+
+                tr:last-child{
+                    display:flex; align-items:center;
+                    td{
+                        padding:0px 0 0; padding-left:10px !important;
+                         float: left;
+                        height:50px; align-items: center;
+                        display:flex !important;
+                        justify-content: center;
+
+                        &:nth-child(1), &:nth-child(2), &:nth-child(3),&:last-child{
+                            display:none !important;
+                        }
+
+                        &:nth-child(4){
+                            width:50% !important;
+                        }
+
+               
+
+                        background:$themecolor1;
+                        color:#fff;
+
+                        &:before{
+                            display:none;
+                        }
+
+                        input.item-price{
+                            color:#fff; font-size:2.2rem;
+                            width:auto;
+                        }
+                    }
+                }
+            }
+         }
+    }
 }

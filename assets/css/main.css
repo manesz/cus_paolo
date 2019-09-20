@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800&display=swap&subset=thai");
 @import url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800&display=swap&subset=thai");
 .navbar-paolo .navbar-nav .nav-link {
@@ -1465,6 +1466,126 @@ aside .consult-form form {
   }
   .cart-bar {
     display: none;
+  }
+  .bucket-list table thead {
+    display: none;
+  }
+  .bucket-list table tbody td {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+    position: relative;
+    padding-left: 34% !important;
+  }
+  .bucket-list table tbody td:nth-child(1):before {
+    content: 'เลือก';
+  }
+  .bucket-list table tbody td:nth-child(2):before {
+    content: 'รายการ';
+  }
+  .bucket-list table tbody td:nth-child(3):before {
+    content: 'จำนวน';
+  }
+  .bucket-list table tbody td:nth-child(4):before {
+    content: 'ราคา';
+  }
+  .bucket-list table tbody td:before {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    background: #14b1e6;
+    left: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bucket-list table tbody td input.item-amount {
+    border: 1px solid #ddd;
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 0 3px !important;
+  }
+  .bucket-list table tbody td .item-price {
+    width: 80px;
+    text-align: left;
+    color: #1e429a;
+  }
+  .bucket-list table a.increase, .bucket-list table a.decrease {
+    background: #1e429a;
+    color: #fff;
+    padding: 0px;
+    vertical-align: middle;
+    display: inline-block !important;
+    height: 30px;
+    width: 30px;
+    line-height: 1;
+  }
+  .bucket-list table tr:nth-child(even) td {
+    background: #f2f2f2;
+  }
+  #cart-page .cart-list table tbody td {
+    border: none;
+  }
+  #cart-page .cart-list table tbody td:nth-child(4):before {
+    content: 'จำนวน';
+  }
+  #cart-page .cart-list table tbody td:nth-child(3):before {
+    content: 'ราคา';
+  }
+  #cart-page .cart-list table tbody td:nth-child(5):before {
+    content: 'ราคารวม';
+  }
+  #cart-page .cart-list table tbody td:nth-child(6):before {
+    content: 'ลบ';
+  }
+  #cart-page .cart-list table tr:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cart-page .cart-list table tr:last-child td {
+    padding: 0px 0 0;
+    padding-left: 10px !important;
+    float: left;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #1e429a;
+    color: #fff;
+  }
+  #cart-page .cart-list table tr:last-child td:nth-child(1), #cart-page .cart-list table tr:last-child td:nth-child(2), #cart-page .cart-list table tr:last-child td:nth-child(3), #cart-page .cart-list table tr:last-child td:last-child {
+    display: none !important;
+  }
+  #cart-page .cart-list table tr:last-child td:nth-child(4) {
+    width: 50% !important;
+  }
+  #cart-page .cart-list table tr:last-child td:before {
+    display: none;
+  }
+  #cart-page .cart-list table tr:last-child td input.item-price {
+    color: #fff;
+    font-size: 2.2rem;
+    width: auto;
   }
 }
 
