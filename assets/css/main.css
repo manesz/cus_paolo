@@ -1529,6 +1529,7 @@ aside .consult-form form {
     height: 30px;
     width: 30px;
     line-height: 1;
+    text-align: center;
   }
   .bucket-list table tr:nth-child(even) td {
     background: #f2f2f2;
@@ -1586,6 +1587,36 @@ aside .consult-form form {
     color: #fff;
     font-size: 2.2rem;
     width: auto;
+  }
+  .payment-list table tr:last-child td:nth-child(1), .order-list table tr:last-child td:nth-child(1), .payment-list table tr:last-child td:nth-child(2), .order-list table tr:last-child td:nth-child(2), .payment-list table tr:last-child td:nth-child(3), .order-list table tr:last-child td:nth-child(3), .payment-list table tr:last-child td:nth-child(4), .order-list table tr:last-child td:nth-child(4) {
+    display: none !important;
+  }
+  .payment-list table tr:last-child td:nth-child(5), .order-list table tr:last-child td:nth-child(5) {
+    margin-top: 20px;
+    background: #1e429a;
+  }
+  .payment-list table tr:last-child td:nth-child(5) .item-price, .order-list table tr:last-child td:nth-child(5) .item-price {
+    color: #fff !important;
+  }
+  .payment-list table tr:last-child td:nth-child(5):before, .order-list table tr:last-child td:nth-child(5):before {
+    content: 'ราคารวม';
+    background: #1e429a;
+  }
+  .order-list table tbody td:nth-child(5):before {
+    content: 'ราคารวม';
+  }
+  .order-list table tbody tr:last-child td:nth-child(1), .order-list table tbody tr:last-child td:nth-child(2), .order-list table tbody tr:last-child td:nth-child(3), .order-list table tbody tr:last-child td:nth-child(4) {
+    display: block !important;
+  }
+  .order-list table tbody tr:last-child td:nth-child(5) {
+    margin-top: 0;
+    background: #fff;
+  }
+  .order-list table tbody tr:last-child td:nth-child(5) input.item-price {
+    color: #1e429a !important;
+  }
+  .order-list table tbody tr:last-child td:nth-child(5):before {
+    background: #14b1e6;
   }
 }
 

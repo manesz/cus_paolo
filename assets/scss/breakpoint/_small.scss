@@ -103,7 +103,7 @@
                 padding:0px; vertical-align: middle;
                 display:inline-block !important;
                 height: 30px; width:30px;
-                line-height: 1;
+                line-height: 1; text-align: center;
             }
 
             tr{
@@ -185,5 +185,63 @@
                 }
             }
          }
+    }
+
+    .payment-list{
+        table{
+            tr:last-child{
+                td{
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                        display:none !important;
+                    }
+
+                    &:nth-child(5){
+                        margin-top:20px; background:$themecolor1;
+
+                        .item-price{
+                            color:#fff !important;
+                        }
+
+                        &:before{
+                            content:'ราคารวม'; background:$themecolor1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .order-list{
+        table{
+            tbody{
+                td{
+                    &:nth-child(5){
+                        &:before{
+                            content:'ราคารวม';
+                        }
+                    }
+                }
+
+                tr:last-child{
+                    td{
+                        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                            display:block !important;
+                        }
+
+                        &:nth-child(5){
+                            margin-top:0; background:#fff;
+
+                            input.item-price{
+                                color:$themecolor1 !important;
+                            }
+
+                            &:before{
+                                background:$themecolor2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
