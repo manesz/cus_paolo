@@ -370,7 +370,7 @@ aside .consult-form form {
   outline: none;
 }
 
-.bucket-list .item-price {
+.bucket-list .item-price, .bucket-list .sub-total {
   text-align: center;
   border: 0;
   background-color: transparent;
@@ -1198,6 +1198,44 @@ aside .consult-form form {
 }
 
 #cart-page .cart-list table td input.item-amount {
+  width: 32px;
+}
+
+#cart-page .package-list table td {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#cart-page .package-list table td:nth-child(1) {
+  width: 7%;
+}
+
+#cart-page .package-list table td:nth-child(2) {
+  width: 45%;
+}
+
+#cart-page .package-list table td:nth-child(3) {
+  width: 15%;
+}
+
+#cart-page .package-list table td:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+#cart-page .package-list table td:nth-child(5) {
+  width: 15%;
+  text-align: center;
+}
+
+#cart-page .package-list table td input[type=text] {
+  width: 50px;
+  display: inline-block;
+}
+
+#cart-page .package-list table td input.item-amount {
   width: 32px;
 }
 

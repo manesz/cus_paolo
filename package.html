@@ -23,7 +23,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="cart-page">
 
     <div class="navigator sticky">
 
@@ -417,15 +417,16 @@
                         </div>
 
                         <!-- BUCKET LIST -->
-                        <div class="bucket-list mt-5">
+                        <div class="bucket-list package-list mt-5">
                             <form action="" id="promotion-bucket">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <td>เลือก</td>
-                                            <td>รายการ</td>
-                                            <td>จำนวน</td>
-                                            <td>ราคา</td>
+                                            <td class="td-1">เลือก</td>
+                                            <td class="td-2">รายการ</td>
+                                            <td class="td-3">ราคา</td>
+                                            <td class="td-4">จำนวน</td>
+                                            <td class="td-5">ราคารวม</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -435,54 +436,69 @@
                                             </td>
                                             <td>
                                                 ตรวจมะเร็งปากมดลูก+อัลตร้าซาวด์มดลูกรังไข่ (Thin prep+U/S Pelvic)
-                                                <input type="hidden" name="item-name[]" class="item-name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:;" class="decrease" data-amount-item="item-1">-</a>
-                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
-                                                <a href="javascript:;" class="increase" data-amount-item="item-1">+</a>
+                                                
                                             </td>
                                             <td>
                                                 <input type="text" name="item-price[]" class="item-price" value="1900" disabled>
                                                 <span>บาท</span>
                                             </td>
+                                            <td>
+                                                <a href="javascript:;" class="decrease btn-cal">-</a>
+                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
+                                                <a href="javascript:;" class="increase btn-cal">+</a>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" class="sub-total" value="1900" disabled>
+                                                <span>บาท</span>
+                                            </td>
                                         </tr>
+
                                         <tr>
                                             <td>
                                                 <input type="checkbox" name="item-check[]" class="item-check" checked>
                                             </td>
                                             <td>
                                                 ตรวจมะเร็งปากมดลูก+อัลตร้าซาวด์มดลูกรังไข่ (Thin prep+U/S Pelvic)
-                                                <input type="hidden" name="item-name[]" class="item-name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:;" class="decrease" data-amount-item="item-1">-</a>
-                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
-                                                <a href="javascript:;" class="increase" data-amount-item="item-1">+</a>
+                                                
                                             </td>
                                             <td>
                                                 <input type="text" name="item-price[]" class="item-price" value="1900" disabled>
                                                 <span>บาท</span>
                                             </td>
+                                            <td>
+                                                <a href="javascript:;" class="decrease btn-cal">-</a>
+                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
+                                                <a href="javascript:;" class="increase btn-cal">+</a>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" class="sub-total" value="1900" disabled>
+                                                <span>บาท</span>
+                                            </td>
                                         </tr>
+
                                         <tr>
                                             <td>
                                                 <input type="checkbox" name="item-check[]" class="item-check" checked>
                                             </td>
                                             <td>
                                                 ตรวจมะเร็งปากมดลูก+อัลตร้าซาวด์มดลูกรังไข่ (Thin prep+U/S Pelvic)
-                                                <input type="hidden" name="item-name[]" class="item-name">
-                                            </td>
-                                            <td>
-                                                <a href="javascript:;" class="decrease" data-amount-item="item-1">-</a>
-                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
-                                                <a href="javascript:;" class="increase" data-amount-item="item-1">+</a>
+                                                
                                             </td>
                                             <td>
                                                 <input type="text" name="item-price[]" class="item-price" value="1900" disabled>
                                                 <span>บาท</span>
                                             </td>
+                                            <td>
+                                                <a href="javascript:;" class="decrease btn-cal">-</a>
+                                                <input type="text" class="item-amount" id="item-1" name="item-amount[]" value="0">
+                                                <a href="javascript:;" class="increase btn-cal">+</a>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" class="sub-total" value="1900" disabled>
+                                                <span>บาท</span>
+                                            </td>
                                         </tr>
+                                       
                                     </tbody>
                                 </table>
 

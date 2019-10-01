@@ -34,6 +34,42 @@ $(document).ready(function(){
 
 
 
+	// Cart Calculate
+	$('.bucket-list').on('click','.btn-cal',function(){
+
+		var this_e = $(this).attr('class').replace('btn-cal','').replace(/ /g, '');
+
+		var this_p = $(this).parents('tr');
+		var item_amount = this_p.find('.item-amount');
+		var item_val = parseInt(item_amount.val());
+		var item_price = this_p.find('.item-price').val();
+		var sub_total = this_p.find('.sub-total');
+
+		switch(this_e) {
+			case 'increase':
+				item_amount.val(item_val+1);
+				sub_total.val(item_amount.val()*item_price);
+			 break;
+
+			case 'decrease':
+				if(item_val>0){
+					item_amount.val(item_val-1);
+					sub_total.val(item_amount.val()*item_price);
+				}
+			 break;
+		} 
+
+		var sum = 0;
+		$('.sub-total').each(function(){
+			sum += +$(this).val();
+		});
+		
+		$('.total').val(sum);
+		
+			
+	});
+
+
 
 
 
@@ -363,24 +399,24 @@ function scrollToFixed(){ // console.log('start Fn:scrollToFixed');
 
 } // if:scWidth > 768 && scroll < 1
 
-function bucketAmountAction(){
-	var itemAmountResult = 0;
-	var btnIncrease = $('a.increase');
-	var btnDecrease = $('a.decrease');
+// function bucketAmountAction(){
+// 	var itemAmountResult = 0;
+// 	var btnIncrease = $('a.increase');
+// 	var btnDecrease = $('a.decrease');
 
-	btnIncrease.on('click', function(){
-		var itemAmount = $(this).siblings('.item-amount');
-		var itemAmountVal = itemAmount.val();
-		itemAmountResult = parseInt(itemAmountVal) + 1;
+// 	btnIncrease.on('click', function(){
+// 		var itemAmount = $(this).siblings('.item-amount');
+// 		var itemAmountVal = itemAmount.val();
+// 		itemAmountResult = parseInt(itemAmountVal) + 1;
 
-		itemAmount.val(itemAmountResult);
-	});
+// 		itemAmount.val(itemAmountResult);
+// 	});
 
-	btnDecrease.on('click', function(){
-		var itemAmount = $(this).siblings('.item-amount');
-		var itemAmountVal = itemAmount.val();
-		itemAmountResult = parseInt(itemAmountVal) - 1;
+// 	btnDecrease.on('click', function(){
+// 		var itemAmount = $(this).siblings('.item-amount');
+// 		var itemAmountVal = itemAmount.val();
+// 		itemAmountResult = parseInt(itemAmountVal) - 1;
 
-		itemAmount.val(itemAmountResult);
-	});
-}
+// 		itemAmount.val(itemAmountResult);
+// 	});
+// }
